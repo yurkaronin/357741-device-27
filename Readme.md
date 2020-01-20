@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Юрий Савченко](https://up.htmlacademy.ru/htmlcss/27/user/357741).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
