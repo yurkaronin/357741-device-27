@@ -1,71 +1,177 @@
-/* Служебыные стили  */
-html { box-sizing: border-box; }
-*, *::before, *::after { box-sizing: inherit; }
+/* open-sans-300 - latin_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
 
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+    url('../fonts/open-sans-light.woff2') format('woff2'),
+    url('../fonts/open-sans-light.woff') format('woff');
+}
+
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+    url('../fonts/open-sans-regular.woff2') format('woff2'),
+    url('../fonts/open-sans-regular.woff') format('woff');
+}
+
+/* gilroy-light */
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 800;
+  font-style: normal;
+
+  src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+    url('../fonts/gilroy-extrabold.woff2') format('woff2'),
+    url('../fonts/gilroy-extrabold.woff') format('woff');
+}
+
+/* gilroy-extrabold */
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 300;
+  font-style: normal;
+
+  src: local('Gilroy Light'), local('Gilroy-Light'),
+    url('../fonts/gilroy-light.woff2') format('woff2'),
+    url('../fonts/gilroy-light.woff') format('woff');
+}
+
+/****************************** Разрешённые глобальные стили согласно критерию Д25  ******************************/
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+
+  margin: 0;
+  padding: 0;
+
+  letter-spacing: .14px;
+
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/****************************** Служебные стили ******************************/
 .list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .flex {
   display: flex;
+
   flex-wrap: wrap;
 }
 
-.visually-hidden {
-
-}
-
-
-/* БЭМ-блоки  */
-.title {
-
-}
-
-.subtitle {
-
-}
-
-.text {
-
-}
-
+/**************************** БЭМ-блоки  ******************************/
 .button {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
 
+  position: relative;
+  z-index: 1;
+
+  display: inline-block;
+
+  width: 220px;
+  padding: 8px 0;
+
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  color: #000;
+  border: 0;
+  background-color: transparent;
 }
 
-.close-btn {
+.button::before {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
 
+  display: block;
+
+  width: 100%;
+  height: 8px;
+
+  content: '';
+  transform: translateY(-50%);
+
+  background-color: #f0c52e;
 }
 
+.button:focus {
+  outline: 0;
+}
 
-/* Шапка сайта header */
+.button:focus::before,
+.button:hover::before {
+  height: 100%;
 
-/* Главное меню сайта navigation */
+  transition: height .5s linear;
+}
 
-/* Слайдер slider  */
+.button:active {
+  color: rgba(0, 0, 0, .3);
+}
 
-/* Популярные категории product-cat  */
+/****************************** .close-btn {} ******************************/
 
-/* Блок Преимущества advantages */
+/****************************** Шапка сайта header ******************************/
 
-/* Перечень брендов product-brands  */
+/****************************** Главное меню сайта navigation ******************************/
 
-/* О нас about-us  */
+/****************************** Слайдер slider ******************************/
 
-/* Контакты contacts */
+/****************************** Популярные категории product-cat ******************************/
 
-/* Подвал сайта footer */
+/****************************** Блок Преимущества advantages ******************************/
 
-/* Хлебные крошки breadcrumbs */
+/****************************** Перечень брендов product-brands ******************************/
 
-/* Фильтр каталога filter */
+/****************************** О нас about-us ******************************/
 
-/* Список товаров каталога catalog */
+/****************************** Контакты contacts ******************************/
 
-/* Модалка с формой обр. связи modal__write-us */
+/****************************** Подвал сайта footer ******************************/
 
-/* Модалка с картой  modal__map */
+/****************************** Хлебные крошки breadcrumbs ******************************/
 
+/****************************** Фильтр каталога filter ******************************/
 
+/****************************** Список товаров каталога catalog ******************************/
+
+/****************************** Модалка с формой обр. связи modal__write-us ******************************/
+
+/****************************** Модалка с картой  modal__map ******************************/
