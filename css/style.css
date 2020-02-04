@@ -1,0 +1,71 @@
+/* Служебыные стили  */
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.visually-hidden {
+
+}
+
+
+/* БЭМ-блоки  */
+.title {
+
+}
+
+.subtitle {
+
+}
+
+.text {
+
+}
+
+.button {
+
+}
+
+.close-btn {
+
+}
+
+
+/* Шапка сайта header */
+
+/* Главное меню сайта navigation */
+
+/* Слайдер slider  */
+
+/* Популярные категории product-cat  */
+
+/* Блок Преимущества advantages */
+
+/* Перечень брендов product-brands  */
+
+/* О нас about-us  */
+
+/* Контакты contacts */
+
+/* Подвал сайта footer */
+
+/* Хлебные крошки breadcrumbs */
+
+/* Фильтр каталога filter */
+
+/* Список товаров каталога catalog */
+
+/* Модалка с формой обр. связи modal__write-us */
+
+/* Модалка с картой  modal__map */
+
+

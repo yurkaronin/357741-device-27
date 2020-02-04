@@ -16,14 +16,13 @@
         height="35">
     </a>
 
-    <!-- Раздел шапки "Инструменты пользователя" -->
     <form class="header__search" action="https://echo.htmlacademy.ru" method="get">
       <label class="visually-hidden" for="search-input">Поиск по сайту</label>
       <input class="header__input" id="search-input" type="text" name="search" placeholder="Поиск по сайту">
       <button class="header__button" type="submit">Найти</button>
     </form>
 
-    <ul class="header__user-menu  user-nav">
+    <ul class="header__user-menu  user-nav  list">
       <li class="user-nav__item">
         <a class="user-nav__link  user__login  icon-user" href="">Войти</a>
       </li>
@@ -35,49 +34,49 @@
       </li>
     </ul>
 
-    <!-- Раздел шапки "Основная навигация по сайту"  -->
-    <nav class="header__navigation">
-      <ul class="nav-list">
-        <li class="nav-list__item">
-          <a class="nav-list__link  catalog-nav" href="catalog.html">Каталог товаров</a>
-          <ul class="catalog-nav__list">
+    <nav class="navigation">
+      <ul class="navigation__list  list">
+        <li class="navigation__item">
+          <a class="navigation__link  catalog-nav" href="catalog.html">Каталог товаров</a>
+          <ul class="catalog-nav__list  list">
             <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="catalog.html">Виртуальная реальность</a>
+              <a class="catalog-nav__link" href="">Виртуальная реальность</a>
             </li>
             <li class="catalog-nav__item">
               <a class="catalog-nav__link" href="catalog.html">Моноподы для селфи</a>
             </li>
             <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="catalog.html">Экшн-камеры</a>
+              <a class="catalog-nav__link" href="">Экшн-камеры</a>
             </li>
             <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="catalog.html">Фитнеc-браслеты</a>
+              <a class="catalog-nav__link" href="">Фитнеc-браслеты</a>
             </li>
             <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="catalog.html">Умные часы</a>
+              <a class="catalog-nav__link" href="">Умные часы</a>
             </li>
             <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="catalog.html">Квадрокоптеры</a>
+              <a class="catalog-nav__link" href="">Квадрокоптеры</a>
             </li>
-          </ul> <!-- /  catalog-nav__list -->
+          </ul>
         </li>
-        <li class="nav-list__item">
-          <a class="nav-list__link" href="">Доставка</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="">Доставка</a>
         </li>
-        <li class="nav-list__item">
-          <a class="nav-list__link" href="">Гарантия</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="">Гарантия</a>
         </li>
-        <li class="nav-list__item">
-          <a class="nav-list__link" href="">Контакты</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="">Контакты</a>
         </li>
-      </ul> <!-- / nav-list -->
+      </ul>
     </nav>
   </header>
 
   <main class="main">
     <h1 class="visually-hidden">Главная страница интернет магазина Device</h1>
+
     <section class="slider">
-      <ol class="slider__list">
+      <ol class="slider__list  list">
         <li class="slider__item  product-slide">
           <img class="product-slide__image" src="img/slider/slider-1.png" alt="Селфи палка" width="384" height="486">
           <div class="product-slide__info">
@@ -151,7 +150,7 @@
 
     <section class="product-cat">
       <h2 class="visually-hidden">Популярные категории товаров</h2>
-      <ul class="product-cat__list">
+      <ul class="product-cat__list  list">
 
         <li class="product-cat__item">
           <a class="product-cat__link" href="">
@@ -211,7 +210,7 @@
 
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul class="advantages__list">
+      <ul class="advantages__list  list">
         <li class="advantages__item">
           <button class="advantages__link" type="button">Доставка</button>
           <div class="advantages__details  icon-delivery">
@@ -243,7 +242,7 @@
 
     <section class="product-brands">
       <h2 class="visually-hidden">Бренды товаров, которые продаются в нашем магазине</h2>
-      <ul class="product-brands__list">
+      <ul class="product-brands__list  list">
         <li class="product-brands__item">
           <a class="product-brands__link" href="catalog.html">
             <img class="product-brands__image" src="img/logotype/brand-logo-1.png" alt="DJI" width="260" height="100" title="Товары компании DJI">
@@ -271,7 +270,6 @@
       </ul>
     </section>
 
-    <!-- О компании Device  -->
     <section class="about-us">
       <h2 class="about-us__title  title">О нас</h2>
       <p class="about-us__description  text">
@@ -279,15 +277,14 @@
         Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
         компаниями:
       </p>
-      <ul class="about-us__partners list">
-        <li class="about-us__partner-name  item">Деловые Линии</li>
-        <li class="about-us__partner-name  item">Автотрейдинг</li>
-        <li class="about-us__partner-name  item">ЖелДорЭкспедиция</li>
+      <ul class="about-us__partners">
+        <li class="about-us__partner-name">Деловые Линии</li>
+        <li class="about-us__partner-name">Автотрейдинг</li>
+        <li class="about-us__partner-name">ЖелДорЭкспедиция</li>
       </ul>
       <a class="about-us__link  button" href="">Подробнее о нас</a>
     </section>
 
-    <!-- Контакты для связи  -->
     <section class="contacts">
       <h2 class="contacts__title  title">Контакты</h2>
       <p class="contacts__text  text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
@@ -300,16 +297,14 @@
     </section>
   </main>
 
-  <!-- Подвал сайта: сквозной  -->
   <footer class="footer">
 
-    <!-- первый блок подвала  -->
     <a class="footer__logo-link  logo-link">
       <img class="footer__logo-image  logo-picture" src="img/logotype/logo-device.svg" alt="Логотип DEVICE" width="163"
         height="35">
     </a>
 
-    <ul class="footer__user-menu  user-nav">
+    <ul class="footer__user-menu  user-nav  list">
       <li class="user-nav__item">
         <a class="user-nav__link  user__login  icon-user-footer" href="">Войти</a>
       </li>
@@ -319,12 +314,11 @@
       <li class="user-nav__item">
         <a class="user-nav__link  icon-cart-footer" href="">Корзина</a>
       </li>
-    </ul><!-- /  первый блок подвала  -->
+    </ul>
 
-    <!-- второй блок подвала  -->
     <p class="footer__text">г. Москва, ул. Строителей, 15</p>
 
-    <ul class="footer__menu  nav-list">
+    <ul class="footer__menu  nav-list  list">
       <li class="nav-list__item">
         <a class="nav-list__link  nav-list__link--footer" href="">Доставка</a>
       </li>
@@ -334,11 +328,10 @@
       <li class="nav-list__item">
         <a class="nav-list__link  nav-list__link--footer" href="">Контакты</a>
       </li>
-    </ul> <!-- / footer__menu -->
-    <p class="footer__text">Тел.: +7 (495) 495-95-95</p> <!-- /  второй блок подвала  -->
+    </ul>
+    <p class="footer__text">Тел.: +7 (495) 495-95-95</p>
 
-    <!-- третий блок подвала  -->
-    <ul class="footer__social  soc-list">
+    <ul class="footer__social  soc-list  list">
       <li class="soc-list__item">
         <a class="soc-list__link" href="">Facebook</a>
       </li>
@@ -348,16 +341,15 @@
       <li class="soc-list__item">
         <a class="soc-list__link" href="">Twitter</a>
       </li>
-    </ul> <!-- / footer__social -->
+    </ul>
 
     <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
       <img class="footer__academy-image" src="img/logotype/logo-htmlacademy.svg" alt="Иконка HTML Академии" width="27"
         height="35">
-    </a> <!-- третий блок подвала  -->
+    </a>
   </footer>
 
-  <!-- Модальное окно с формой обратной связи  -->
-  <section class="modal  write-us">
+  <section class="modal__write-us  modal">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
 
@@ -377,16 +369,13 @@
 
     <button class="close-btn" type="button">Закрыть окно</button>
   </section>
-  <!-- /  Модальное окно с формой обратной связи  -->
 
-  <!-- Модальное окно с картой  -->
-  <section class="modal-map  modal">
+  <section class="modal__map  modal">
     <h2 class="visually-hidden">Наш магазин на карте</h2>
     <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1kLm6pBLXB7Ek_a_JMJ-ivWVjg94XIIB2" width="960"
       height="559"></iframe>
     <button class="close-btn" type="button">Закрыть окно</button>
   </section>
-  <!-- / Модальное окно с картой  -->
 
 </body>
 
