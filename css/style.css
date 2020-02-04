@@ -131,10 +131,6 @@ a {
   background-color: #f0c52e;
 }
 
-.button:focus {
-  outline: 0;
-}
-
 .button:focus::before,
 .button:hover::before {
   height: 100%;
@@ -146,7 +142,7 @@ a {
   color: rgba(0, 0, 0, .3);
 }
 
-/****************************** .close-btn {} ******************************/
+.close-btn {}
 
 /****************************** Шапка сайта header ******************************/
 
