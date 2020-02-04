@@ -54,7 +54,7 @@ html {
   box-sizing: inherit;
 }
 
-body {
+.body {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 300;
