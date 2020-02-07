@@ -54,6 +54,15 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/****************************** Служебные стили ******************************/
 .body {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 14px;
@@ -68,15 +77,27 @@ html {
   color: #000;
 }
 
-img {
-  max-width: 100%;
+.visually-hidden:not(:focus),
+input[type=checkbox].visually-hidden,
+input[type=radio].visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
-a {
-  text-decoration: none;
-}
-
-/****************************** Служебные стили ******************************/
 .list {
   margin: 0;
   padding: 0;
@@ -88,6 +109,11 @@ a {
   display: flex;
 
   flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
 /**************************** БЭМ-блоки  ******************************/
@@ -142,9 +168,198 @@ a {
   color: rgba(0, 0, 0, .3);
 }
 
-.close-btn {}
+
 
 /****************************** Шапка сайта header ******************************/
+.header {
+  padding: 40px 0 44px;
+}
+
+.header .container {
+  position: relative;
+
+  padding: 32px 60px 42px 59px;
+
+  background-color: #f7e296;
+}
+
+.logo-picture {
+  display: block;
+
+  width: 100%;
+  max-width: 163px;
+}
+
+.header__logo {
+  position: absolute;
+  top: -24px;
+  left: 58px;
+}
+
+.header__top {
+  align-items: baseline;
+}
+
+/* Форма поиска в шапке */
+.header__search {
+  position: relative;
+
+  width: 100%;
+  max-width: 445px;
+  margin-right: 95px;
+}
+
+.header__search::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+
+  width: 50px;
+  height: 50px;
+
+  content: '';
+
+  background-image: url(../img/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: 5px 50%;
+}
+
+.header__input {
+  line-height: 30px;
+
+  position: relative;
+
+  width: 357px;
+  margin: 0;
+  padding: 8px 0 8px 40px;
+
+  opacity: .3;
+  color: #000;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background-color: transparent;
+}
+
+.header__input:focus {
+  color: #000;
+  border-bottom-color: #000;
+  outline: 0;
+}
+
+/* кнопка поиска с наворотами  */
+.button--search {
+  font-weight: 400;
+  line-height: 30px;
+
+  visibility: hidden;
+
+  padding: 8px 18px;
+
+  letter-spacing: .01em;
+  text-transform: none;
+
+  color: #000;
+  border: 2px solid #000;
+  background-color: transparent;
+}
+
+.header__input:focus,
+.header__input:hover {
+  opacity: 1;
+}
+
+.button--search:focus,
+.button--search:hover {
+  visibility: visible;
+
+  color: #fff;
+  background-color: #000;
+}
+
+.button--search:focus {
+  visibility: visible;
+}
+
+.button--search:active {
+  visibility: visible;
+
+  color: rgba(255, 255, 255, .3);
+  background-color: #000;
+}
+
+.header__input:focus+.button--search {
+  visibility: visible;
+}
+
+/* служебное меню */
+.header__user-menu {
+  width: 100%;
+  max-width: 499px;
+}
+
+.user-nav {
+  justify-content: space-between;
+}
+
+.user-nav__item {
+  width: 100%;
+  max-width: 120px;
+
+  text-align: right;
+}
+
+.user-nav__item:first-child {
+  margin-right: 165px;
+
+  text-align: left;
+}
+
+.user-nav__item:first-child .user-nav__link {
+  padding-left: 27px;
+}
+
+.user-nav__link {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+
+  position: relative;
+
+  padding-left: 20px;
+
+  letter-spacing: .15px;
+
+  color: #000;
+}
+
+.user-nav__link::before {
+  position: absolute;
+  left: 0;
+
+  display: block;
+
+  width: 30px;
+  height: 30px;
+
+  content: '';
+
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.icon-user::before {
+  background-image: url(../img/icons/user.svg);
+}
+
+.icon-compare::before {
+  background-image: url(../img/icons/compare.svg);
+}
+
+.icon-cart::before {
+  background-image: url(../img/icons/cart.svg);
+}
 
 /****************************** Главное меню сайта navigation ******************************/
 

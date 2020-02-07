@@ -11,65 +11,69 @@
 
 <body class="body">
   <header class="header">
-    <a class="header__logo  logo-link">
-      <img class="header__logo-image  logo-picture" src="img/logotype/logo-device.svg" alt="Логотип DEVICE" width="163"
-        height="35">
-    </a>
+    <div class="container">
+      <a class="header__logo  logo-link">
+        <img class="header__logo-image  logo-picture" src="img/logotype/logo-device.svg" alt="Логотип DEVICE"
+          width="163" height="35">
+      </a>
 
-    <form class="header__search" action="https://echo.htmlacademy.ru" method="get">
-      <label class="visually-hidden" for="search-input">Поиск по сайту</label>
-      <input class="header__input" id="search-input" type="text" name="search" placeholder="Поиск по сайту">
-      <button class="header__button" type="submit">Найти</button>
-    </form>
+      <div class="header__top  flex">
+        <form class="header__search  flex" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search-input">Поиск по сайту</label>
+          <input class="header__input" id="search-input" type="text" name="search" placeholder="Поиск по сайту">
+          <button class="button--search" type="submit">Найти</button>
+        </form>
 
-    <ul class="header__user-menu  user-nav  list">
-      <li class="user-nav__item">
-        <a class="user-nav__link  user__login  icon-user" href="">Войти</a>
-      </li>
-      <li>
-        <a class="user-nav__link  icon-compare" href="">Сравнить</a>
-      </li>
-      <li class="user-nav__item">
-        <a class="user-nav__link  icon-cart" href="">Корзина</a>
-      </li>
-    </ul>
+        <ul class="header__user-menu  user-nav  list  flex">
+          <li class="user-nav__item">
+            <a class="user-nav__link  user__login  icon-user" href="">Войти</a>
+          </li>
+          <li>
+            <a class="user-nav__link  icon-compare" href="">Сравнить</a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link  icon-cart" href="">Корзина</a>
+          </li>
+        </ul>
+      </div>
 
-    <nav class="navigation">
-      <ul class="navigation__list  list">
-        <li class="navigation__item">
-          <a class="navigation__link  catalog-nav" href="catalog.html">Каталог товаров</a>
-          <ul class="catalog-nav__list  list">
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="">Виртуальная реальность</a>
-            </li>
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="catalog.html">Моноподы для селфи</a>
-            </li>
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="">Экшн-камеры</a>
-            </li>
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="">Фитнеc-браслеты</a>
-            </li>
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="">Умные часы</a>
-            </li>
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="">Доставка</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="">Гарантия</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="navigation">
+        <ul class="navigation__list  list">
+          <li class="navigation__item">
+            <a class="navigation__link  catalog-nav" href="catalog.html">Каталог товаров</a>
+            <ul class="catalog-nav__list  list">
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link" href="">Виртуальная реальность</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link" href="catalog.html">Моноподы для селфи</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link" href="">Экшн-камеры</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link" href="">Фитнеc-браслеты</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link" href="">Умные часы</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link" href="">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Доставка</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Гарантия</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="main">
@@ -155,8 +159,8 @@
         <li class="product-cat__item">
           <a class="product-cat__link" href="">
             <div class="product-cat__image-wrap">
-              <img class="product-cat__image" src="img/catalog/popular-1.svg" alt="Очки виртуальной реальности" width="97"
-                height="55">
+              <img class="product-cat__image" src="img/catalog/popular-1.svg" alt="Очки виртуальной реальности"
+                width="97" height="55">
             </div>
             <h3 class="product-cat__title">Виртуальная реальность</h3>
           </a>
@@ -181,8 +185,8 @@
         <li class="product-cat__item">
           <a class="product-cat__link" href="">
             <div class="product-cat__image-wrap">
-              <img class="product-cat__image" src="img/catalog/popular-4.svg" alt="Очки виртуальной реальности" width="107"
-                height="65">
+              <img class="product-cat__image" src="img/catalog/popular-4.svg" alt="Очки виртуальной реальности"
+                width="107" height="65">
             </div>
             <h3 class="product-cat__title">Фитнес-браслеты</h3>
           </a>
@@ -190,8 +194,8 @@
         <li class="product-cat__item">
           <a class="product-cat__link" href="">
             <div class="product-cat__image-wrap">
-              <img class="product-cat__image" src="img/catalog/popular-5.svg" alt="Очки виртуальной реальности" width="56"
-                height="98">
+              <img class="product-cat__image" src="img/catalog/popular-5.svg" alt="Очки виртуальной реальности"
+                width="56" height="98">
             </div>
             <h3 class="product-cat__title">Умные часы</h3>
           </a>
@@ -199,8 +203,8 @@
         <li class="product-cat__item">
           <a class="product-cat__link" href="">
             <div class="product-cat__image-wrap">
-              <img class="product-cat__image" src="img/catalog/popular-6.svg" alt="Очки виртуальной реальности" width="132"
-                height="69">
+              <img class="product-cat__image" src="img/catalog/popular-6.svg" alt="Очки виртуальной реальности"
+                width="132" height="69">
             </div>
             <h3 class="product-cat__title">Квадрокоптеры</h3>
           </a>
@@ -245,25 +249,29 @@
       <ul class="product-brands__list  list">
         <li class="product-brands__item">
           <a class="product-brands__link" href="catalog.html">
-            <img class="product-brands__image" src="img/logotype/brand-logo-1.png" alt="DJI" width="260" height="100" title="Товары компании DJI">
+            <img class="product-brands__image" src="img/logotype/brand-logo-1.png" alt="DJI" width="260" height="100"
+              title="Товары компании DJI">
           </a>
 
         </li>
         <li class="product-brands__item">
           <a class="product-brands__link" href="catalog.html">
-            <img class="product-brands__image" src="img/logotype/brand-logo-2.png" alt="SP-gadgets" width="260" height="100" title="Товары компании SP-gadgets">
+            <img class="product-brands__image" src="img/logotype/brand-logo-2.png" alt="SP-gadgets" width="260"
+              height="100" title="Товары компании SP-gadgets">
           </a>
 
         </li>
         <li class="product-brands__item">
           <a class="product-brands__link" href="catalog.html">
-            <img class="product-brands__image" src="img/logotype/brand-logo-3.png" alt="GO PRO" width="260" height="100" title="Товары компании GO PRO">
+            <img class="product-brands__image" src="img/logotype/brand-logo-3.png" alt="GO PRO" width="260" height="100"
+              title="Товары компании GO PRO">
           </a>
 
         </li>
         <li class="product-brands__item">
           <a class="product-brands__link" href="catalog.html">
-            <img class="product-brands__image" src="img/logotype/brand-logo-4.png" alt="Vive" width="260" height="100" title="Товары компании Vive">
+            <img class="product-brands__image" src="img/logotype/brand-logo-4.png" alt="Vive" width="260" height="100"
+              title="Товары компании Vive">
           </a>
 
         </li>
@@ -290,7 +298,8 @@
       <p class="contacts__text  text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
         работоспособность покупки. Всякое бывает.</p>
       <a class="contacts__map-link" href="">
-        <img class="contacts__map-image" src="img/map.jpg" alt="Фото карты с расположением офиса: г. Москва, ул. Строителей, 15">
+        <img class="contacts__map-image" src="img/map.jpg"
+          alt="Фото карты с расположением офиса: г. Москва, ул. Строителей, 15">
       </a>
       <a class="contacts__button  button" href="">Напишите нам</a>
 
