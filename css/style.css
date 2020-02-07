@@ -81,9 +81,9 @@ a
     margin: 0;
     padding: 0;
 
-    letter-spacing: .14px;
+    letter-spacing: 0.14px;
 
-    color: #000;
+    color: #000000;
 }
 
 .visually-hidden:not(:focus),
@@ -150,7 +150,7 @@ input[type=radio].visually-hidden
     letter-spacing: 4px;
     text-transform: uppercase;
 
-    color: #000;
+    color: #000000;
     border: 0;
     background-color: transparent;
 }
@@ -177,12 +177,12 @@ input[type=radio].visually-hidden
 {
     height: 100%;
 
-    transition: height .5s linear;
+    transition: height 0.5s linear;
 }
 
 .button:active
 {
-    color: rgba(0, 0, 0, .3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -262,8 +262,8 @@ input[type=radio].visually-hidden
     margin: 0;
     padding: 8px 0 8px 40px;
 
-    opacity: .3;
-    color: #000;
+    opacity: 0.3;
+    color: #000000;
     border: none;
     border-bottom: 2px solid transparent;
     background-color: transparent;
@@ -271,8 +271,8 @@ input[type=radio].visually-hidden
 
 .header__input:focus
 {
-    color: #000;
-    border-bottom-color: #000;
+    color: #000000;
+    border-bottom-color: #000000;
     outline: 0;
 }
 
@@ -286,11 +286,11 @@ input[type=radio].visually-hidden
 
     padding: 8px 18px;
 
-    letter-spacing: .01em;
+    letter-spacing: 0.01em;
     text-transform: none;
 
-    color: #000;
-    border: 2px solid #000;
+    color: #000000;
+    border: 2px solid #000000;
     background-color: transparent;
 }
 
@@ -305,8 +305,8 @@ input[type=radio].visually-hidden
 {
     visibility: visible;
 
-    color: #fff;
-    background-color: #000;
+    color: #ffffff;
+    background-color: #000000;
 }
 
 .button--search:focus
@@ -318,8 +318,8 @@ input[type=radio].visually-hidden
 {
     visibility: visible;
 
-    color: rgba(255, 255, 255, .3);
-    background-color: #000;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #000000;
 }
 
 .header__input:focus + .button--search
@@ -369,9 +369,9 @@ input[type=radio].visually-hidden
 
     padding-left: 20px;
 
-    letter-spacing: .15px;
+    letter-spacing: 0.15px;
 
-    color: #000;
+    color: #000000;
 }
 
 .user-nav__link::before
@@ -448,7 +448,7 @@ input[type=radio].visually-hidden
 
     content: '';
 
-    opacity: .3;
+    opacity: 0.3;
     background-image: url(../img/icons/plus.svg);
 }
 
@@ -465,7 +465,7 @@ input[type=radio].visually-hidden
     letter-spacing: 3.6px;
     text-transform: uppercase;
 
-    color: #000;
+    color: #000000;
 }
 
 
