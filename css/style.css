@@ -556,10 +556,8 @@ input[type=radio].visually-hidden {
 
 .slider__item:before {
   font-family: 'Gilroy', 'Arial', sans-serif;
-  font-size: 40px;
   font-size: 179px;
-  font-weight: bold;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 120%;
 
   position: absolute;
@@ -896,11 +894,25 @@ input[type=radio].visually-hidden {
   content: url(../img/icons/credit.svg);
 }
 
-
-
-
-
 /****************************** Перечень брендов product-brands ******************************/
+.product-brands {
+  padding: 94px 0;
+
+}
+
+.product-brands__list {
+
+}
+
+.product-brands__item {
+  max-width: 260px;
+  width: 100%;
+  margin-right: 40px;
+}
+
+.product-brands__item:last-child {
+  margin-right: 0;
+}
 
 /****************************** О нас about-us ******************************/
 
