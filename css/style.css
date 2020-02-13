@@ -72,9 +72,9 @@ a {
   margin: 0;
   padding: 0;
 
-  letter-spacing: .14px;
+  letter-spacing: 0.15px;
 
-  color: #000;
+  color: #000000;
 }
 
 .visually-hidden:not(:focus),
@@ -117,6 +117,8 @@ input[type=radio].visually-hidden {
 }
 
 /**************************** БЭМ-блоки  ******************************/
+
+/* БЭМ-блок: кнопка */
 .button {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
@@ -137,7 +139,7 @@ input[type=radio].visually-hidden {
   letter-spacing: 4px;
   text-transform: uppercase;
 
-  color: #000;
+  color: #000000;
   border: 0;
   background-color: transparent;
 }
@@ -162,12 +164,33 @@ input[type=radio].visually-hidden {
 .button:hover::before {
   height: 100%;
 
-  transition: height .5s linear;
+  transition: height 0.5s linear;
 }
 
 .button:active {
-  color: rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, 0.3);
 }
+
+/* /конец БЭМ-блок: кнопка */
+
+/* БЭМ-блок: логотип */
+.logo-picture {
+  display: block;
+
+  width: 100%;
+  max-width: 163px;
+}
+
+.logo-picture:hover,
+.logo-picture:focus {
+  opacity: 0.6;
+}
+
+.logo-picture:active {
+  opacity: 0.3;
+}
+
+/* /конец БЭМ-блок: логотип */
 
 
 
@@ -183,22 +206,6 @@ input[type=radio].visually-hidden {
   padding: 30px 60px 30px;
 
   background-color: #f7e296;
-}
-
-.logo-picture {
-  display: block;
-
-  width: 100%;
-  max-width: 163px;
-}
-
-.logo-picture:hover,
-.logo-picture:focus {
-  opacity: .6;
-}
-
-.logo-picture:active {
-  opacity: .3;
 }
 
 .header__logo {
@@ -248,17 +255,23 @@ input[type=radio].visually-hidden {
   margin: 0;
   padding: 8px 0 8px 40px;
 
-  opacity: .3;
-  color: #000;
+  opacity: 0.3;
+  color: #000000;
   border: none;
   border-bottom: 2px solid transparent;
   background-color: transparent;
 }
 
-.header__input:focus {
-  color: #000;
-  border-bottom-color: #000;
+.header__input:active,
+.header__input:hover {
+  color: #000000;
+  border-bottom-color: #000000;
   outline: 0;
+  opacity: 0.6;
+}
+
+.header__input:focus {
+  opacity: 1;
 }
 
 /* кнопка поиска с наворотами  */
@@ -271,17 +284,11 @@ input[type=radio].visually-hidden {
   padding: 8px 18px;
 
   cursor: pointer;
-  letter-spacing: .01em;
   text-transform: none;
 
-  color: #000;
+  color: #000000;
   border: 2px solid #000;
   background-color: transparent;
-}
-
-.header__input:focus,
-.header__input:hover {
-  opacity: 1;
 }
 
 .button--search:focus,
@@ -289,7 +296,7 @@ input[type=radio].visually-hidden {
   visibility: visible;
 
   color: #fff;
-  background-color: #000;
+  background-color: #000000;
 }
 
 .button--search:focus {
@@ -299,13 +306,15 @@ input[type=radio].visually-hidden {
 .button--search:active {
   visibility: visible;
 
-  color: rgba(255, 255, 255, .3);
-  background-color: #000;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
 }
 
 .header__input:focus+.button--search {
   visibility: visible;
 }
+
+/* /конец Форма поиска в шапке */
 
 /* служебное меню */
 .header__user-menu {
@@ -343,10 +352,18 @@ input[type=radio].visually-hidden {
 
   padding-left: 20px;
 
-  letter-spacing: .15px;
-
-  color: #000;
+  color: #000000;
 }
+
+.user-nav__link:focus,
+.user-nav__link:hover {
+  opacity: 0.6;
+}
+
+.user-nav__link:active {
+  opacity: 0.3;
+}
+
 
 .user-nav__link::before {
   position: absolute;
@@ -389,9 +406,11 @@ input[type=radio].visually-hidden {
 
   content: '';
 
-  opacity: .3;
+  opacity: 0.3;
   background-image: url(../img/icons/plus.svg);
 }
+
+/* /конец служебное меню */
 
 /****************************** Главное меню сайта navigation ******************************/
 .navigation__list {
@@ -426,7 +445,16 @@ input[type=radio].visually-hidden {
   letter-spacing: 3.6px;
   text-transform: uppercase;
 
-  color: #000;
+  color: #000000;
+}
+
+.navigation__link:focus,
+.navigation__link:hover {
+  opacity: 0.6;
+}
+
+.navigation__link:active {
+  opacity: 0.3;
 }
 
 /* второй уровень меню */
@@ -472,9 +500,16 @@ input[type=radio].visually-hidden {
   font-weight: 300;
   line-height: 2.4;
 
-  letter-spacing: .15px;
+  color: #000000;
+}
 
-  color: #000;
+.catalog-nav__link:focus,
+.catalog-nav__link:hover {
+  opacity: 0.6;
+}
+
+.catalog-nav__link:active {
+  opacity: 0.3;
 }
 
 /* Показ дополнительного меню при наведении*/
@@ -482,7 +517,6 @@ input[type=radio].visually-hidden {
 .navigation__item:first-child>a:focus+.catalog-nav {
   display: flex;
 }
-
 
 /****************************** Слайдер slider ******************************/
 .slider {
@@ -539,7 +573,7 @@ input[type=radio].visually-hidden {
   content: counters(li, '.', decimal-leading-zero);
   counter-increment: li;
   text-align: center;
-  letter-spacing: .36px;
+  letter-spacing: 0.36px;
 
   color: #fff;
 }
@@ -582,9 +616,9 @@ input[type=radio].visually-hidden {
   margin-top: 80px;
   margin-bottom: 18px;
 
-  letter-spacing: .17px;
+  letter-spacing: 0.17px;
 
-  color: #000;
+  color: #000000;
 }
 
 .product-slide__description {
@@ -595,8 +629,6 @@ input[type=radio].visually-hidden {
   margin: 0;
   margin-bottom: 45px;
   padding-right: 35px;
-
-  letter-spacing: .15px;
 
   color: #464646;
 }
@@ -615,9 +647,17 @@ input[type=radio].visually-hidden {
   min-width: 148px;
   max-width: 170px;
 
-  letter-spacing: .36px;
+  letter-spacing: 0.36px;
 
-  color: #000;
+  color: #000000;
+}
+
+.product-slide__characteristics th {
+  color: #464646;
+  font-family: "Open Sans", 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
 }
 
 
@@ -698,7 +738,7 @@ input[type=radio].visually-hidden {
 }
 
 .product-cat__image-wrap:active .product-cat__image {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .product-cat__image--special {
@@ -712,9 +752,7 @@ input[type=radio].visually-hidden {
   font-weight: 800;
   line-height: 24px;
 
-  letter-spacing: .18px;
-
-  color: #000;
+  color: #000000;
 }
 
 
@@ -724,16 +762,6 @@ input[type=radio].visually-hidden {
 
   background: linear-gradient(to top, #e5e5e5 75%, #fff 25%);
 }
-
-/* .advantages::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 288px;
-  background-color: #e5e5e5;
-  bottom: 0;
-  z-index: 0;
-} */
 
 .advantages .container {
   display: flex;
@@ -772,7 +800,7 @@ input[type=radio].visually-hidden {
   width: 100%;
   max-width: 100%;
 
-  background-color: #000;
+  background-color: #000000;
 }
 
 .selected .advantages__button {
@@ -794,7 +822,7 @@ input[type=radio].visually-hidden {
   text-transform: uppercase;
 
   color: #f7e184;
-  background-color: #000;
+  background-color: #000000;
 }
 
 .advantages__description {
@@ -829,9 +857,9 @@ input[type=radio].visually-hidden {
   margin: 0;
   margin-bottom: 30px;
 
-  letter-spacing: .21px;
+  letter-spacing: 0.21px;
 
-  color: #000;
+  color: #000000;
 }
 
 .advantages__text {
@@ -840,8 +868,6 @@ input[type=radio].visually-hidden {
   line-height: 30px;
 
   padding: 0;
-
-  letter-spacing: .15px;
 
   color: #464646;
 }
