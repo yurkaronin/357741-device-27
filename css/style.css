@@ -72,9 +72,9 @@ a {
   margin: 0;
   padding: 0;
 
-  letter-spacing: 0.14px;
+  letter-spacing: .14px;
 
-  color: #000000;
+  color: #000;
 }
 
 .visually-hidden:not(:focus),
@@ -131,12 +131,13 @@ input[type=radio].visually-hidden {
   width: 220px;
   padding: 8px 0;
 
+  cursor: pointer;
   text-align: center;
   vertical-align: top;
   letter-spacing: 4px;
   text-transform: uppercase;
 
-  color: #000000;
+  color: #000;
   border: 0;
   background-color: transparent;
 }
@@ -161,11 +162,11 @@ input[type=radio].visually-hidden {
 .button:hover::before {
   height: 100%;
 
-  transition: height 0.5s linear;
+  transition: height .5s linear;
 }
 
 .button:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, .3);
 }
 
 
@@ -177,8 +178,8 @@ input[type=radio].visually-hidden {
 
 .header .container {
   position: relative;
-  min-height: 295px;
 
+  min-height: 295px;
   padding: 30px 60px 30px;
 
   background-color: #f7e296;
@@ -189,6 +190,15 @@ input[type=radio].visually-hidden {
 
   width: 100%;
   max-width: 163px;
+}
+
+.logo-picture:hover,
+.logo-picture:focus {
+  opacity: .6;
+}
+
+.logo-picture:active {
+  opacity: .3;
 }
 
 .header__logo {
@@ -238,16 +248,16 @@ input[type=radio].visually-hidden {
   margin: 0;
   padding: 8px 0 8px 40px;
 
-  opacity: 0.3;
-  color: #000000;
+  opacity: .3;
+  color: #000;
   border: none;
   border-bottom: 2px solid transparent;
   background-color: transparent;
 }
 
 .header__input:focus {
-  color: #000000;
-  border-bottom-color: #000000;
+  color: #000;
+  border-bottom-color: #000;
   outline: 0;
 }
 
@@ -260,11 +270,12 @@ input[type=radio].visually-hidden {
 
   padding: 8px 18px;
 
-  letter-spacing: 0.01em;
+  cursor: pointer;
+  letter-spacing: .01em;
   text-transform: none;
 
-  color: #000000;
-  border: 2px solid #000000;
+  color: #000;
+  border: 2px solid #000;
   background-color: transparent;
 }
 
@@ -277,8 +288,8 @@ input[type=radio].visually-hidden {
 .button--search:hover {
   visibility: visible;
 
-  color: #ffffff;
-  background-color: #000000;
+  color: #fff;
+  background-color: #000;
 }
 
 .button--search:focus {
@@ -288,8 +299,8 @@ input[type=radio].visually-hidden {
 .button--search:active {
   visibility: visible;
 
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #000000;
+  color: rgba(255, 255, 255, .3);
+  background-color: #000;
 }
 
 .header__input:focus+.button--search {
@@ -332,9 +343,9 @@ input[type=radio].visually-hidden {
 
   padding-left: 20px;
 
-  letter-spacing: 0.15px;
+  letter-spacing: .15px;
 
-  color: #000000;
+  color: #000;
 }
 
 .user-nav__link::before {
@@ -378,7 +389,7 @@ input[type=radio].visually-hidden {
 
   content: '';
 
-  opacity: 0.3;
+  opacity: .3;
   background-image: url(../img/icons/plus.svg);
 }
 
@@ -415,42 +426,44 @@ input[type=radio].visually-hidden {
   letter-spacing: 3.6px;
   text-transform: uppercase;
 
-  color: #000000;
+  color: #000;
 }
 
 /* второй уровень меню */
 .catalog-nav {
   position: absolute;
-
-  left: 0;
   z-index: 5;
+  left: 0;
+
   display: none;
+
   width: 100%;
   max-width: 100%;
   margin: 0;
-  background-color: #f7e296;
   padding: 20px 60px 36px;
+
+  background-color: #f7e296;
 }
 
 .catalog-nav__list {
-  justify-content: flex-start;
   flex-direction: column;
-  max-width: 700px;
+
   width: 100%;
+  max-width: 700px;
   max-height: 110px;
 
+  justify-content: flex-start;
 }
 
 .catalog-nav__item {
-  max-width: 185px;
   width: 100%;
+  max-width: 185px;
   margin-right: 50px;
 }
 
 .catalog-nav__item--special {
   min-height: 110px;
   margin-left: -30px;
-
 }
 
 .catalog-nav__link {
@@ -458,8 +471,10 @@ input[type=radio].visually-hidden {
   font-size: 15px;
   font-weight: 300;
   line-height: 2.4;
-  letter-spacing: 0.15px;
-  color: #000000;
+
+  letter-spacing: .15px;
+
+  color: #000;
 }
 
 /* Показ дополнительного меню при наведении*/
@@ -482,90 +497,108 @@ input[type=radio].visually-hidden {
 /* БЭМ-Блок Слайд product-slide  */
 .product-slide {
   display: none;
+
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.product-slide--check {
+.product-slide.selected {
   display: flex;
 }
 
 .slider__list {
   list-style-type: decimal-leading-zero;
+
   counter-reset: li;
 }
 
 .slider__item {
   position: relative;
+
   margin: 0 0 0 0;
   padding: 0 0 10px 0;
 }
 
 .slider__item:before {
-  font-family: "Gilroy";
-  counter-increment: li;
-  content: counters(li, ".", decimal-leading-zero);
-  display: inline-block;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 40px;
+  font-size: 179px;
+  font-weight: bold;
+  font-weight: 900;
+  line-height: 120%;
+
   position: absolute;
   top: -33px;
   right: 182px;
+
+  display: inline-block;
+
   width: 50px;
-  color: #ffffff;
+
+  content: counters(li, '.', decimal-leading-zero);
+  counter-increment: li;
   text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  font-size: 179px;
-  font-weight: 900;
-  line-height: 120%;
-  letter-spacing: 0.36px;
+  letter-spacing: .36px;
+
+  color: #fff;
 }
 
 .product-slide__image {
-  max-width: 565px;
   width: 100%;
-  text-align: center;
+  max-width: 565px;
 
+  text-align: center;
 }
 
 .product-slide__info {
-  max-width: 530px;
-  width: 100%;
-  z-index: 1;
   position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 530px;
 }
 
 .product-slide__info::after {
-  content: '—';
-  position: absolute;
-  color: #ffffff;
-  text-align: center;
   font-size: 108px;
   font-weight: 500;
   line-height: 120%;
+
+  position: absolute;
   top: -35px;
+
+  content: '—';
+  text-align: center;
+
+  color: #fff;
 }
 
 .product-slide__title {
-  margin-top: 80px;
-  color: #000000;
-  font-family: "Gilroy";
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 47px;
   font-weight: 900;
   line-height: 56px;
-  letter-spacing: 0.17px;
+
+  margin-top: 80px;
   margin-bottom: 18px;
+
+  letter-spacing: .17px;
+
+  color: #000;
 }
 
 .product-slide__description {
-  margin: 0;
-  color: #464646;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: 0.15px;
+
+  margin: 0;
   margin-bottom: 45px;
   padding-right: 35px;
+
+  letter-spacing: .15px;
+
+  color: #464646;
 }
 
 .product-slide__button {
@@ -574,14 +607,17 @@ input[type=radio].visually-hidden {
 
 /* Табличка характеристик*/
 .product-slide__characteristics td {
-  color: #000000;
-  font-family: "Gilroy";
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 48px;
-  letter-spacing: 0.36px;
+
   min-width: 148px;
   max-width: 170px;
+
+  letter-spacing: .36px;
+
+  color: #000;
 }
 
 
@@ -595,29 +631,248 @@ input[type=radio].visually-hidden {
 
 .slider__switch-item {
   font-size: 0;
-  background-color: transparent;
-  border: none;
+
+  position: relative;
+
   width: 12px;
   height: 12px;
-  background-image: url(../img/icons/slider-button-empty.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 0;
-  padding: 0;
-  position: relative;
   margin-right: 18px;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/icons/slider-button-empty.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.slider__switch-item--check {
-  background-image: url(../img/icons/slider-button.svg);
+.slider__switch-item.selected {
   z-index: 1;
 
+  background-image: url(../img/icons/slider-button.svg);
 }
 
 /****************************** Популярные категории product-cat ******************************/
+.product-cat {
+  margin-top: -70px;
+}
+
+.product-cat__list {
+  justify-content: space-between;
+}
+
+.product-cat__item {
+  width: 100%;
+  max-width: 160px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.product-cat__item:last-child {
+  margin-right: 0;
+}
+
+.product-cat__image-wrap {
+  position: relative;
+
+  display: flex;
+
+  width: 160px;
+  height: 160px;
+  margin-bottom: 35px;
+
+  background-color: #f7e296;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.product-cat__link:hover .product-cat__image-wrap,
+.product-cat__link:focus .product-cat__image-wrap,
+.product-cat__link:active .product-cat__image-wrap {
+  background-color: #f0c52e;
+}
+
+.product-cat__image-wrap:active .product-cat__image {
+  opacity: .3;
+}
+
+.product-cat__image--special {
+  position: absolute;
+  bottom: 0;
+}
+
+.product-cat__title {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+
+  letter-spacing: .18px;
+
+  color: #000;
+}
+
 
 /****************************** Блок Преимущества advantages ******************************/
+.advantages {
+  margin-top: 25px;
+
+  background: linear-gradient(to top, #e5e5e5 75%, #fff 25%);
+}
+
+/* .advantages::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 288px;
+  background-color: #e5e5e5;
+  bottom: 0;
+  z-index: 0;
+} */
+
+.advantages .container {
+  display: flex;
+
+  padding-bottom: 69px;
+
+  flex-wrap: wrap;
+}
+
+.advantages__link-list {
+  width: 100%;
+  max-width: 285px;
+  padding-top: 77px;
+  padding-bottom: 45px;
+
+  border-right: 7px solid #000;
+}
+
+.advantages__button {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+
+  max-width: 160px;
+
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
+}
+
+.advantages__link-item {
+  margin-bottom: 25px;
+}
+
+.advantages__link-item.selected {
+  width: 100%;
+  max-width: 100%;
+
+  background-color: #000;
+}
+
+.selected .advantages__button {
+  color: #f7e184;
+  background-color: transparent;
+}
+
+.selected .advantages__button::before {
+  display: none;
+}
+
+.advantages__button--active:active {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+
+  letter-spacing: 2.15px;
+  text-transform: uppercase;
+
+  color: #f7e184;
+  background-color: #000;
+}
+
+.advantages__description {
+  width: 100%;
+  max-width: 695px;
+  padding-top: 72px;
+}
+
+.advantages__item {
+  position: relative;
+
+  display: none;
+
+  width: 100%;
+  margin-left: 115px;
+}
+
+.advantages__item--active {
+  display: block;
+}
+
+.advantages__details {
+  max-width: 426px;
+}
+
+.advantages__title {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+
+  margin: 0;
+  margin-bottom: 30px;
+
+  letter-spacing: .21px;
+
+  color: #000;
+}
+
+.advantages__text {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+
+  padding: 0;
+
+  letter-spacing: .15px;
+
+  color: #464646;
+}
+
+.advantages__details::after {
+  position: absolute;
+  top: 10px;
+  right: 0;
+
+  display: flex;
+
+  content: '';
+
+  justify-content: space-between;
+}
+
+.icon-delivery::after {
+  content: url(../img/icons/delivery.svg);
+}
+
+.icon-warranty::after {
+  content: url(../img/icons/warranty.svg);
+}
+
+.icon-credit::after {
+  content: url(../img/icons/credit.svg);
+}
+
+
+
+
 
 /****************************** Перечень брендов product-brands ******************************/
 
