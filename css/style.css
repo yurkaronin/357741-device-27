@@ -117,7 +117,6 @@ input[type=radio].visually-hidden {
 }
 
 /**************************** БЭМ-блоки  ******************************/
-
 /* БЭМ-блок: кнопка */
 .button {
   font-family: 'Gilroy', 'Arial', sans-serif;
@@ -212,14 +211,14 @@ input[type=radio].visually-hidden {
 .header .container {
   position: relative;
 
-  min-height: 295px;
-  padding: 30px 60px 30px;
+  min-height: 300px;
+  padding: 35px 60px 30px;
 
   background-color: #f7e296;
 }
 
 .header__top {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   align-items: baseline;
 }
@@ -247,11 +246,15 @@ input[type=radio].visually-hidden {
 
   background-image: url(../img/icons/search.svg);
   background-repeat: no-repeat;
-  background-position: 5px 50%;
+  background-position: 4px 50%;
 }
 
 .header__input {
   line-height: 30px;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
 
   position: relative;
 
@@ -321,12 +324,9 @@ input[type=radio].visually-hidden {
 /* /конец Форма поиска в шапке */
 
 /* служебное меню */
-.header__user-menu {
+.user-nav {
   width: 100%;
   max-width: 499px;
-}
-
-.user-nav {
   justify-content: space-between;
 }
 
@@ -446,9 +446,9 @@ input[type=radio].visually-hidden {
 }
 
 .navigation__item:last-child {
-  margin-left: 32px;
-
+  margin-left: 33px;
   text-align: right;
+  margin-right: -3px;
 }
 
 .navigation__link {
@@ -539,7 +539,7 @@ input[type=radio].visually-hidden {
 /****************************** Слайдер slider ******************************/
 .slider {
   position: relative;
-  top: -155px;
+  top: -152px;
 }
 
 .slider .container {
@@ -597,8 +597,13 @@ input[type=radio].visually-hidden {
 .product-slide__image {
   width: 100%;
   max-width: 565px;
+  padding-left: 57px;
 
-  text-align: center;
+  /* text-align: center; */
+}
+
+.product-slide__image--special {
+  padding-left: 0;
 }
 
 .product-slide__info {
@@ -611,7 +616,7 @@ input[type=radio].visually-hidden {
 
 .product-slide__info::after {
   position: absolute;
-  top: 40px;
+  top: 24px;
   left: 0;
 
   content: '';
@@ -627,7 +632,7 @@ input[type=radio].visually-hidden {
   font-weight: 900;
   line-height: 56px;
 
-  margin-top: 80px;
+  margin-top: 65px;
   margin-bottom: 18px;
 
   letter-spacing: 0.17px;
@@ -680,7 +685,7 @@ input[type=radio].visually-hidden {
 .slider__switch-list {
   position: absolute;
   top: 317px;
-  right: 65px;
+  right: 62px;
 }
 
 .slider__switch-item {
