@@ -1259,6 +1259,7 @@ input[type=radio].visually-hidden {
 /****************************** Хлебные крошки breadcrumbs ******************************/
 .breadcrumbs {
   padding-left: 60px;
+  margin-bottom: 45px;
 }
 
 .main__title {
@@ -1311,6 +1312,91 @@ input[type=radio].visually-hidden {
   color: #000;
 }
 
+/****************************** Шапка фильтра каталога ******************************/
+.filter {
+  width: 100%;
+  background-color: #ebebeb;
+
+}
+
+.catalog__header .container {
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.filter__header {
+  background-color: #dcdcdc;
+  /* position: absolute; */
+  left: 0;
+/*   height: 100%;
+  width: 100%; */
+  right: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter__subtitle {
+  color: #000000;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.catalog__order {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog__order  .filter__subtitle {
+  max-width: 180px;
+}
+
+.sort-order__list {
+  max-width: 500px;
+}
+
+.sort-sequence__list {
+  max-width: 50px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.icon-up::after {
+  content: url(../img/icons/up-dir.svg);
+}
+
+.icon-down::after {
+  content: url(../img/icons/down-dir.svg);
+}
+
+.icon-down::after,
+.icon-up::after {
+  opacity: 0.2;
+}
+
+.sort-sequence__item:hover,
+.sort-sequence__item:focus {
+  opacity: 0.4;
+}
+
+.sort-sequence__item:active {
+  opacity: 1;
+}
+
+.sort-sequence__item:active::after,
+.sort-sequence__list .active::after  {
+  opacity: 1;
+}
+
+
+
 /****************************** Фильтр каталога filter ******************************/
 
 /****************************** Список товаров каталога catalog ******************************/
@@ -1324,7 +1410,6 @@ input[type=radio].visually-hidden {
   max-width: 60px;
   margin-left: 10px;
 }
-
 
 /****************************** Модалка с формой обр. связи modal__write-us ******************************/
 
