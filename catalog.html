@@ -13,86 +13,98 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body class="body">
+<body class="body  inner-page">
 
   <header class="header">
-    <a class="logo-link" href="index.html">Device</a>
+    <div class="container">
 
-    <form class="header__search" method="get" action="https://echo.htmlacademy.ru">
-      <label class="visually-hidden" for="search-input">Поиск по сайту</label>
-      <input class="header__input" id="search-input" type="text" name="search" placeholder="Поиск по сайту">
-      <button class="header__button" type="button">Найти</button>
-    </form>
+      <a class="logo-link" href="index.html">Device</a>
 
-    <ul class="header__user-menu  user-nav  list">
-      <li class="user-nav__item">
-        <a class="user-nav__link  user__logged  icon-user" href="#">Валентин Петухов</a>
-      </li>
-      <li class="user-nav__item">
-        <a class="user-nav__link  user__logout" href="#">Выйти</a>
-      </li>
-      <li class="user-nav__item">
-        <a class="user-nav__link  icon-compare" href="#">Сравнить</a>
-      </li>
-      <li class="user-nav__item">
-        <a class="user-nav__link  icon-cart" href="#">Корзина</a>
-      </li>
-    </ul>
+      <div class="header__top  flex">
+        <form class="header__search  flex" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search-input">Поиск по сайту</label>
+          <input class="header__input" id="search-input" type="text" name="search" placeholder="Поиск по сайту">
+          <button class="button--search" type="submit">Найти</button>
+        </form>
 
-    <nav class="navigation">
-      <ul class="navigation__list  list">
-        <li class="navigation__item">
-          <a class="navigation__link  catalog-nav" href="catalog.html">Каталог товаров</a>
-          <ul class="catalog-nav__list  list">
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="">Виртуальная реальность</a>
-            </li>
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="catalog.html">Моноподы для селфи</a>
-            </li>
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="">Экшн-камеры</a>
-            </li>
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="">Фитнеc-браслеты</a>
-            </li>
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="">Умные часы</a>
-            </li>
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="">Доставка</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="">Гарантия</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+        <ul class="user-nav  list  flex">
+          <li class="user-nav__item  user-nav__item--login">
+            <a class="user-nav__link  user__logged  icon-user" href="#">Валентин Петухов</a>
+          </li>
+          <li class="user-nav__item  user-nav__item--logout">
+            <a class="user-nav__link  user__logout" href="#">Выйти</a>
+          </li>
+          <li class="user-nav__item  user-nav__item--compare">
+            <a class="user-nav__link  user__compare  icon-compare" href="">Сравнить</a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link  user__cart  icon-cart" href="">Корзина</a>
+          </li>
+        </ul>
+      </div>
 
+      <nav class="navigation">
+        <ul class="navigation__list  list  flex">
+          <li class="navigation__item">
+            <a class="navigation__link  icon-plus" href="catalog.html">Каталог товаров</a>
+
+            <div class="catalog-nav">
+              <ul class="catalog-nav__list  list  flex">
+                <li class="catalog-nav__item">
+                  <a class="catalog-nav__link" href="">Виртуальная реальность</a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a class="catalog-nav__link" href="catalog.html">Моноподы для&nbsp;селфи</a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a class="catalog-nav__link" href="">Экшн-камеры</a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a class="catalog-nav__link" href="">Фитнеc-браслеты</a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a class="catalog-nav__link" href="">Умные часы</a>
+                </li>
+                <li class="catalog-nav__item  catalog-nav__item--special">
+                  <a class="catalog-nav__link" href="">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Доставка</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Гарантия</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
 
   <main class="main">
 
-    <h1 class="main__title  title">Моноподы для селфи</h1>
+    <div class="breadcrumbs  container">
+      <h1 class="main__title  title">Моноподы для селфи</h1>
 
-    <ul class="breadcrumbs  list">
-      <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="index.html">Главная</a>
-      </li>
-      <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="catalog.html">Каталог товаров</a>
-      </li>
-      <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="">Моноподы для селфи</a>
-      </li>
-    </ul>
+      <ul class="breadcrumbs__list  list  flex">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="">Моноподы для селфи</a>
+        </li>
+      </ul>
+
+    </div>
 
     <section class="filter">
 
@@ -223,57 +235,70 @@
   </main>
 
   <footer class="footer">
+    <div class="container">
+      <div class="footer__top  flex">
 
-    <a class="logo-link" href="/index.html">Device</a>
+        <a class="logo-link" href="index.html">Device</a>
 
-    <ul class="footer__user-menu  user-nav  list">
-      <li class="user-nav__item">
-        <a class="user-nav__link  user__logged  icon-user" href="#">Валентин Петухов</a>
-      </li>
-      <li class="user-nav__item">
-        <a class="user-nav__link  user__logout" href="#">Выйти</a>
-      </li>
-      <li class="user-nav__item">
-        <a class="user-nav__link  icon-compare" href="#">Сравнить</a>
-      </li>
-      <li class="user-nav__item">
-        <a class="user-nav__link  icon-cart" href="#">Корзина</a>
-      </li>
-    </ul>
+        <ul class="user-nav  list  flex">
+          <li class="user-nav__item  user-nav__item--login">
+            <a class="user-nav__link  user__logged  icon-user" href="#">Валентин Петухов</a>
+          </li>
+          <li class="user-nav__item  user-nav__item--logout">
+            <a class="user-nav__link  user__logout" href="#">Выйти</a>
+          </li>
+          <li class="user-nav__item  user-nav__item--compare">
+            <a class="user-nav__link  user__compare  icon-compare" href="">Сравнить</a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link  user__cart  icon-cart" href="">Корзина</a>
+          </li>
+        </ul>
 
-    <p class="footer__text">г. Москва, ул. Строителей, 15</p>
+      </div>
 
-    <ul class="footer__menu  nav-list  list">
-      <li class="nav-list__item">
-        <a class="nav-list__link  nav-list__link--footer" href="#">Доставка</a>
-      </li>
-      <li class="nav-list__item">
-        <a class="nav-list__link  nav-list__link--footer" href="#">Гарантия</a>
-      </li>
-      <li class="nav-list__item">
-        <a class="nav-list__link  nav-list__link--footer" href="#">Контакты</a>
-      </li>
-    </ul>
+      <div class="footer__wrapper  flex">
 
-    <p class="footer__text">Тел.: +7 (495) 495-95-95</p>
+        <p class="footer__text">г. Москва, ул. Строителей, 15</p>
 
-    <ul class="footer__social  soc-list  list">
-      <li class="soc-list__item">
-        <a class="soc-list__link" href="">Facebook</a>
-      </li>
-      <li class="soc-list__item">
-        <a class="soc-list__link" href="">Instagram</a>
-      </li>
-      <li class="soc-list__item">
-        <a class="soc-list__link" href="">Twitter</a>
-      </li>
-    </ul>
+        <ul class="navigation__list  list  flex">
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Доставка</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Гарантия</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Контакты</a>
+          </li>
+        </ul>
 
-    <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-      <img class="footer__academy-image" src="img/logotype/logo-htmlacademy.svg" alt="Иконка HTML Академии" width="27"
-        height="35">
-    </a>
+        <p class="footer__text">Тел.: +7 (495) 495-95-95</p>
 
+      </div>
+
+      <div class="footer__bottom  flex">
+        <ul class="soc-list  list  flex">
+          <li class="soc-list__item">
+            <a class="soc-list__link  icon-fb" href="">Facebook</a>
+          </li>
+          <li class="soc-list__item">
+            <a class="soc-list__link  icon-inst" href="">Instagram</a>
+          </li>
+          <li class="soc-list__item ">
+            <a class="soc-list__link  icon-tw" href="">Twitter</a>
+          </li>
+        </ul>
+
+        <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+          <svg class="footer__academy-logo" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
+            <path fill="#FFC600"
+              d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
+          </svg>
+
+        </a>
+      </div>
+    </div>
   </footer>
 
 </body>

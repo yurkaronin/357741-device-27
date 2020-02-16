@@ -72,9 +72,9 @@ a {
   margin: 0;
   padding: 0;
 
-  letter-spacing: 0.15px;
+  letter-spacing: .15px;
 
-  color: #000000;
+  color: #000;
 }
 
 .visually-hidden:not(:focus),
@@ -138,7 +138,7 @@ input[type=radio].visually-hidden {
   letter-spacing: 4px;
   text-transform: uppercase;
 
-  color: #000000;
+  color: #000;
   border: 0;
   background-color: transparent;
 }
@@ -163,11 +163,11 @@ input[type=radio].visually-hidden {
 .button:hover::before {
   height: 100%;
 
-  transition: height 0.5s linear;
+  transition: height .5s linear;
 }
 
 .button:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, .3);
 }
 
 /* /конец БЭМ-блок: кнопка */
@@ -175,28 +175,31 @@ input[type=radio].visually-hidden {
 /* БЭМ-блок: логотип */
 .logo-link {
   font-family: 'Gilroy', 'Arial', sans-serif;
-  font-weight: 700;
   font-size: 48px;
+  font-weight: 700;
   line-height: 48px;
+
+  letter-spacing: .01em;
   text-transform: uppercase;
+
   color: #ffc600;
-  letter-spacing: 0.01em;
 }
 
 .header .logo-link {
   position: absolute;
   top: -24px;
   left: 58px;
-  color: #000000;
+
+  color: #000;
 }
 
 .logo-link:hover {
-  opacity: 0.6;
+  opacity: .6;
 }
 
 .logo-link:active,
 .logo-link:focus {
-  opacity: 0.3;
+  opacity: .3;
 }
 
 /* /конец БЭМ-блок: логотип */
@@ -205,7 +208,7 @@ input[type=radio].visually-hidden {
 
 /****************************** Шапка сайта header ******************************/
 .header {
-  padding: 36px 0 41px;
+  padding: 40px 0 41px;
 }
 
 .header .container {
@@ -250,11 +253,10 @@ input[type=radio].visually-hidden {
 }
 
 .header__input {
-  line-height: 30px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 15px;
   font-weight: 300;
-  letter-spacing: 0.15px;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  line-height: 30px;
 
   position: relative;
 
@@ -262,8 +264,10 @@ input[type=radio].visually-hidden {
   margin: 0;
   padding: 8px 0 8px 40px;
 
-  opacity: 0.3;
-  color: #000000;
+  letter-spacing: .15px;
+
+  opacity: .3;
+  color: #000;
   border: none;
   border-bottom: 2px solid transparent;
   background-color: transparent;
@@ -271,10 +275,10 @@ input[type=radio].visually-hidden {
 
 .header__input:active,
 .header__input:hover {
-  color: #000000;
-  border-bottom-color: #000000;
+  opacity: .6;
+  color: #000;
+  border-bottom-color: #000;
   outline: 0;
-  opacity: 0.6;
 }
 
 .header__input:focus {
@@ -293,7 +297,7 @@ input[type=radio].visually-hidden {
   cursor: pointer;
   text-transform: none;
 
-  color: #000000;
+  color: #000;
   border: 2px solid #000;
   background-color: transparent;
 }
@@ -303,7 +307,7 @@ input[type=radio].visually-hidden {
   visibility: visible;
 
   color: #fff;
-  background-color: #000000;
+  background-color: #000;
 }
 
 .button--search:focus {
@@ -313,8 +317,8 @@ input[type=radio].visually-hidden {
 .button--search:active {
   visibility: visible;
 
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #000000;
+  color: rgba(255, 255, 255, .3);
+  background-color: #000;
 }
 
 .header__input:focus+.button--search {
@@ -327,6 +331,7 @@ input[type=radio].visually-hidden {
 .user-nav {
   width: 100%;
   max-width: 499px;
+
   justify-content: space-between;
 }
 
@@ -337,13 +342,13 @@ input[type=radio].visually-hidden {
   text-align: right;
 }
 
-.header .user-nav__item:first-child {
-  margin-right: 165px;
+.header .user-nav__item--login {
+  margin-right: 125px;
 
   text-align: left;
 }
 
-.header .user-nav__item:first-child .user-nav__link {
+.header .user__login {
   padding-left: 27px;
 }
 
@@ -358,16 +363,16 @@ input[type=radio].visually-hidden {
 }
 
 .header .user-nav__link {
-  color: #000000;
+  color: #000;
 }
 
 .user-nav__link:focus,
 .user-nav__link:hover {
-  opacity: 0.6;
+  opacity: .6;
 }
 
 .user-nav__link:active {
-  opacity: 0.3;
+  opacity: .3;
 }
 
 
@@ -424,7 +429,7 @@ input[type=radio].visually-hidden {
 
   content: '';
 
-  opacity: 0.3;
+  opacity: .3;
   background-image: url(../img/icons/plus.svg);
 }
 
@@ -446,9 +451,10 @@ input[type=radio].visually-hidden {
 }
 
 .navigation__item:last-child {
-  margin-left: 33px;
-  text-align: right;
   margin-right: -3px;
+  margin-left: 33px;
+
+  text-align: right;
 }
 
 .navigation__link {
@@ -463,16 +469,16 @@ input[type=radio].visually-hidden {
   letter-spacing: 3.6px;
   text-transform: uppercase;
 
-  color: #000000;
+  color: #000;
 }
 
 .navigation__link:focus,
 .navigation__link:hover {
-  opacity: 0.6;
+  opacity: .6;
 }
 
 .navigation__link:active {
-  opacity: 0.3;
+  opacity: .3;
 }
 
 /* второй уровень меню */
@@ -518,16 +524,16 @@ input[type=radio].visually-hidden {
   font-weight: 300;
   line-height: 2.4;
 
-  color: #000000;
+  color: #000;
 }
 
 .catalog-nav__link:focus,
 .catalog-nav__link:hover {
-  opacity: 0.6;
+  opacity: .6;
 }
 
 .catalog-nav__link:active {
-  opacity: 0.3;
+  opacity: .3;
 }
 
 /* Показ дополнительного меню при наведении*/
@@ -539,7 +545,7 @@ input[type=radio].visually-hidden {
 /****************************** Слайдер slider ******************************/
 .slider {
   position: relative;
-  top: -152px;
+  top: -155px;
 }
 
 .slider .container {
@@ -548,28 +554,28 @@ input[type=radio].visually-hidden {
 
 /* БЭМ-Блок Слайд product-slide  */
 .product-slide {
+  position: relative;
+
   display: none;
+
+  margin: 0;
+  margin-top: 15px;
+  padding: 0 0 10px;
 
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .product-slide.selected {
   display: flex;
+
+  max-height: 475px;
 }
 
 .slider__list {
   list-style-type: decimal-leading-zero;
 
   counter-reset: li;
-}
-
-.slider__item {
-  position: relative;
-
-  margin: 0 0 0 0;
-  padding: 0 0 10px 0;
 }
 
 .slider__item:before {
@@ -579,7 +585,7 @@ input[type=radio].visually-hidden {
   line-height: 120%;
 
   position: absolute;
-  top: -33px;
+  top: -40px;
   right: 182px;
 
   display: inline-block;
@@ -589,7 +595,7 @@ input[type=radio].visually-hidden {
   content: counters(li, '.', decimal-leading-zero);
   counter-increment: li;
   text-align: center;
-  letter-spacing: 0.36px;
+  letter-spacing: .36px;
 
   color: #fff;
 }
@@ -603,6 +609,7 @@ input[type=radio].visually-hidden {
 }
 
 .product-slide__image--special {
+  margin-top: 50px;
   padding-left: 0;
 }
 
@@ -619,11 +626,12 @@ input[type=radio].visually-hidden {
   top: 24px;
   left: 0;
 
-  content: '';
-
-  background-color: #ffffff;
   width: 100px;
   height: 7px;
+
+  content: '';
+
+  background-color: #fff;
 }
 
 .product-slide__title {
@@ -635,9 +643,9 @@ input[type=radio].visually-hidden {
   margin-top: 65px;
   margin-bottom: 18px;
 
-  letter-spacing: 0.17px;
+  letter-spacing: .17px;
 
-  color: #000000;
+  color: #000;
 }
 
 .product-slide__description {
@@ -666,17 +674,18 @@ input[type=radio].visually-hidden {
   min-width: 148px;
   max-width: 170px;
 
-  letter-spacing: 0.36px;
+  letter-spacing: .36px;
 
-  color: #000000;
+  color: #000;
 }
 
 .product-slide__characteristics th {
-  color: #464646;
-  font-family: "Open Sans", 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
+
+  color: #464646;
 }
 
 
@@ -684,8 +693,8 @@ input[type=radio].visually-hidden {
 /* Навигационные кнопки в слайдере  */
 .slider__switch-list {
   position: absolute;
-  top: 317px;
-  right: 62px;
+  top: 304px;
+  right: 63px;
 }
 
 .slider__switch-item {
@@ -717,7 +726,7 @@ input[type=radio].visually-hidden {
 
 /****************************** Популярные категории product-cat ******************************/
 .product-cat {
-  margin-top: -60px;
+  margin-top: -50px;
 }
 
 .product-cat__list {
@@ -757,7 +766,7 @@ input[type=radio].visually-hidden {
 }
 
 .product-cat__image-wrap:active .product-cat__image {
-  opacity: 0.3;
+  opacity: .3;
 }
 
 .product-cat__image--special {
@@ -771,13 +780,13 @@ input[type=radio].visually-hidden {
   font-weight: 800;
   line-height: 24px;
 
-  color: #000000;
+  color: #000;
 }
 
 
 /****************************** Блок Преимущества advantages ******************************/
 .advantages {
-  margin-top: 25px;
+  margin-top: 23px;
 
   background: linear-gradient(to top, #e5e5e5 75%, #fff 25%);
 }
@@ -819,7 +828,7 @@ input[type=radio].visually-hidden {
   width: 100%;
   max-width: 100%;
 
-  background-color: #000000;
+  background-color: #000;
 }
 
 .selected .advantages__button {
@@ -841,7 +850,7 @@ input[type=radio].visually-hidden {
   text-transform: uppercase;
 
   color: #f7e184;
-  background-color: #000000;
+  background-color: #000;
 }
 
 .advantages__description {
@@ -876,9 +885,9 @@ input[type=radio].visually-hidden {
   margin: 0;
   margin-bottom: 30px;
 
-  letter-spacing: 0.21px;
+  letter-spacing: .21px;
 
-  color: #000000;
+  color: #000;
 }
 
 .advantages__text {
@@ -917,12 +926,12 @@ input[type=radio].visually-hidden {
 
 /****************************** Перечень брендов product-brands ******************************/
 .product-brands {
-  padding: 94px 0;
+  padding: 92px 0;
 }
 
 .product-brands__item {
-  max-width: 260px;
   width: 100%;
+  max-width: 260px;
   margin-right: 40px;
 }
 
@@ -931,7 +940,8 @@ input[type=radio].visually-hidden {
 }
 
 .product-brands__image {
-  opacity: 0.2;
+  opacity: .2;
+
   filter: grayscale(100%);
 }
 
@@ -939,44 +949,49 @@ input[type=radio].visually-hidden {
 .product-brands__image:active,
 .product-brands__image:focus {
   opacity: 1.0;
+
   filter: none;
 }
 
 /****************************** О компании about ******************************/
 .about {
-  padding: 0;
   margin: 0;
-  padding-bottom: 79px;
+  padding: 0;
+  padding-bottom: 84px;
 }
 
 .about .container {
   display: flex;
+
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .about-us {
-  max-width: 50%;
   width: 100%;
+  max-width: 50%;
   padding-right: 95px;
 }
 
 .contacts {
-  max-width: 50%;
   width: 100%;
+  max-width: 50%;
   padding-left: 20px;
 }
 
 .about .title {
-  color: #000000;
-  font-family: "Gilroy", 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
-  letter-spacing: 0.21px;
-  margin: 45px 0;
 
   position: relative;
+
+  margin: 45px 0;
+
+  letter-spacing: .21px;
+
+  color: #000;
 }
 
 .about .title::after {
@@ -984,39 +999,46 @@ input[type=radio].visually-hidden {
   top: -50px;
   left: 0;
 
-  content: '';
-
-  background-color: #000000;
   width: 80px;
   height: 7px;
+
+  content: '';
+
+  background-color: #000;
 }
 
 .about .text {
-  color: #464646;
   font-size: 15px;
   line-height: 32px;
+
   margin: 0;
   margin-bottom: 24px;
+
+  color: #464646;
 }
 
 .about-us__partners {
   margin-top: 61px;
-  list-style: circle;
   margin-bottom: 55px;
+
+  list-style: circle;
 }
 
 .about-us__partner-name {
-  font-family: "Gilroy", 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 40px;
+
   margin-left: -20px;
   padding-left: 14px;
 }
 
+/****************************** Контакты contacts ******************************/
 .contacts__map-link {
-  max-width: 560px;
   display: block;
+
+  max-width: 560px;
   margin-top: 33px;
   margin-bottom: 62px;
 }
@@ -1029,62 +1051,71 @@ input[type=radio].visually-hidden {
   width: 260px;
 }
 
-/****************************** Контакты contacts ******************************/
+/****************************** Подвал сайта footer ******************************/
 .footer {
+  color: #fff;
   background-color: #464646;
-  color: #ffffff;
-
 }
 
 .footer .container {
-  padding: 64px 0;
+  padding: 60px 0;
 }
 
 .footer__top {
+  margin-bottom: 25px;
+
   justify-content: space-between;
-  margin-bottom: 22px;
 }
 
 .footer .logo-link {
-  max-width: 900px;
-  justify-content: flex-end;
   position: relative;
+
+  max-width: 900px;
+
+  justify-content: flex-end;
 }
 
 .footer .logo-link::after {
   position: absolute;
   bottom: -133px;
   left: 0;
-  content: '';
-  background-color: #ffc600;
-  width: 80px;
-  height: 7px;
+
   display: block;
 
+  width: 80px;
+  height: 7px;
+
+  content: '';
+
+  background-color: #ffc600;
 }
 
-
 .footer .user-nav__item {
-  max-width: 115px;
   width: 100%;
+  max-width: 100px;
+  margin-left: 35px;
+
   text-align: left;
 }
 
 .footer .user-nav {
-  max-width: 900px;
   width: 100%;
+  max-width: 900px;
+
   justify-content: flex-end;
 }
 
-.footer .user-nav__item {
-  max-width: 100px;
+.footer .user-nav__item:last-child {
   width: 100%;
-  margin-left: 41px;
+  max-width: 100px;
+  margin-left: 35px;
+
+  text-align: right;
 }
 
 .user-nav__link {
-  opacity: 0.7;
-  color: #ffffff;
+  opacity: .7;
+  color: #fff;
 }
 
 .user-nav__link:hover,
@@ -1093,17 +1124,18 @@ input[type=radio].visually-hidden {
 }
 
 .user-nav__link:active {
-  opacity: 0.3;
+  opacity: .3;
 }
 
 .footer__wrapper {
-  justify-content: space-between;
   margin-bottom: 65px;
+
+  justify-content: space-between;
 }
 
 .footer__text {
-  max-width: 210px;
   width: 100%;
+  max-width: 210px;
   margin: 0;
 }
 
@@ -1111,21 +1143,25 @@ input[type=radio].visually-hidden {
   text-align: end;
 }
 
+.footer .navigation__list {
+  margin-top: 3px;
+}
+
 .footer .navigation__list,
 .soc-list {
-  max-width: 730px;
   width: 100%;
+  max-width: 735px;
+
   justify-content: center;
 }
 
 .footer .navigation__item {
-  margin: 0 15px;
   max-width: 170px;
-
+  margin: 0 15px;
 }
 
 .footer .navigation__link {
-  color: #ffffff;
+  color: #fff;
 }
 
 .soc-list__item {
@@ -1139,13 +1175,34 @@ input[type=radio].visually-hidden {
 .soc-list__link {
   font-size: 0;
   line-height: 0;
+
   position: relative;
-  max-width: 32px;
+
   width: 100%;
+  max-width: 32px;
+
+  opacity: .3;
 }
 
-.soc-list__link::after {
+.soc-list__link:hover,
+.soc-list__link:focus {
+  opacity: .6;
+}
+
+.soc-list__link:active {
+  opacity: .1;
+}
+
+.icon-fb::after {
+  content: url(../img/icons/soc-fb.svg);
+}
+
+.icon-inst::after {
   content: url(../img/icons/soc-inst.svg);
+}
+
+.icon-tw::after {
+  content: url(../img/icons/soc-tw.svg);
 }
 
 .footer__bottom {
@@ -1153,20 +1210,121 @@ input[type=radio].visually-hidden {
 }
 
 .footer__academy-link {
-  max-width: 210px;
   width: 100%;
+  max-width: 210px;
+
   text-align: right;
 }
 
+.footer__academy-logo:hover,
+.footer__academy-logo:focus {
+  opacity: .6;
+}
 
+.footer__academy-logo:active {
+  opacity: .3;
+}
 
-/****************************** Подвал сайта footer ******************************/
+/****************************** Страница каталога catalog.html ******************************/
+.inner-page .header {
+  padding-bottom: 37px;
+}
+
+.inner-page .user-nav__item {
+  max-width: 100px;
+}
+
+.inner-page .user-nav__item--login {
+  max-width: 160px;
+  margin-right: 0;
+}
+
+.inner-page .user__logout {
+  max-width: 95px;
+  padding-left: 5px;
+}
+
+.inner-page .user-nav__item--logout {
+  text-align: left;
+}
+
+.inner-page .user__logged {
+  padding-left: 25px;
+}
+
+.inner-page .header .container {
+  min-height: 187px;
+}
 
 /****************************** Хлебные крошки breadcrumbs ******************************/
+.breadcrumbs {
+  padding-left: 60px;
+}
+
+.main__title {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+
+  margin: 0;
+  margin-bottom: 25px;
+
+  letter-spacing: .5px;
+
+  color: #000;
+}
+
+.breadcrumbs__list {
+  width: 100%;
+  max-width: 500px;
+}
+
+.breadcrumbs__item {
+  position: relative;
+
+  margin-right: 20px;
+}
+
+.breadcrumbs__item::after {
+  width: 4px;
+  height: 7px;
+
+  content: url(../img/icons/nav-arrow.svg);
+}
+
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+
+.breadcrumbs__link {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+
+  padding-right: 12px;
+
+  letter-spacing: .14px;
+
+  opacity: .3;
+  color: #000;
+}
 
 /****************************** Фильтр каталога filter ******************************/
 
 /****************************** Список товаров каталога catalog ******************************/
+
+/****************************** Подвал footer ******************************/
+.inner-page .footer .user-nav__item:last-child {
+  margin-left: 10px;
+}
+
+.inner-page .footer .user-nav__item--logout {
+  max-width: 60px;
+  margin-left: 10px;
+}
+
 
 /****************************** Модалка с формой обр. связи modal__write-us ******************************/
 
