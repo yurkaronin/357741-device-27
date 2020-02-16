@@ -74,7 +74,7 @@ a {
 
   letter-spacing: 0.15px;
 
-  color: #000;
+  color: #000000;
 }
 
 .visually-hidden:not(:focus),
@@ -138,7 +138,7 @@ input[type=radio].visually-hidden {
   letter-spacing: 4px;
   text-transform: uppercase;
 
-  color: #000;
+  color: #000000;
   border: 0;
   background-color: transparent;
 }
@@ -190,7 +190,7 @@ input[type=radio].visually-hidden {
   top: -24px;
   left: 58px;
 
-  color: #000;
+  color: #000000;
 }
 
 .logo-link:hover {
@@ -267,7 +267,7 @@ input[type=radio].visually-hidden {
   letter-spacing: 0.15px;
 
   opacity: .3;
-  color: #000;
+  color: #000000;
   border: none;
   border-bottom: 2px solid transparent;
   background-color: transparent;
@@ -276,8 +276,8 @@ input[type=radio].visually-hidden {
 .header__input:active,
 .header__input:hover {
   opacity: 0.6;
-  color: #000;
-  border-bottom-color: #000;
+  color: #000000;
+  border-bottom-color: #000000;
   outline: 0;
 }
 
@@ -297,8 +297,8 @@ input[type=radio].visually-hidden {
   cursor: pointer;
   text-transform: none;
 
-  color: #000;
-  border: 2px solid #000;
+  color: #000000;
+  border: 2px solid #000000;
   background-color: transparent;
 }
 
@@ -306,8 +306,8 @@ input[type=radio].visually-hidden {
 .button--search:hover {
   visibility: visible;
 
-  color: #fff;
-  background-color: #000;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .button--search:focus {
@@ -318,7 +318,7 @@ input[type=radio].visually-hidden {
   visibility: visible;
 
   color: rgba(255, 255, 255, 0.3);
-  background-color: #000;
+  background-color: #000000;
 }
 
 .header__input:focus+.button--search {
@@ -363,7 +363,7 @@ input[type=radio].visually-hidden {
 }
 
 .header .user-nav__link {
-  color: #000;
+  color: #000000;
 }
 
 .user-nav__link:focus,
@@ -469,7 +469,7 @@ input[type=radio].visually-hidden {
   letter-spacing: 3.6px;
   text-transform: uppercase;
 
-  color: #000;
+  color: #000000;
 }
 
 .navigation__link:focus,
@@ -524,7 +524,7 @@ input[type=radio].visually-hidden {
   font-weight: 300;
   line-height: 2.4;
 
-  color: #000;
+  color: #000000;
 }
 
 .catalog-nav__link:focus,
@@ -597,7 +597,7 @@ input[type=radio].visually-hidden {
   text-align: center;
   letter-spacing: 0.36px;
 
-  color: #fff;
+  color: #ffffff;
 }
 
 .product-slide__image {
@@ -631,7 +631,7 @@ input[type=radio].visually-hidden {
 
   content: '';
 
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .product-slide__title {
@@ -645,7 +645,7 @@ input[type=radio].visually-hidden {
 
   letter-spacing: 0.17px;
 
-  color: #000;
+  color: #000000;
 }
 
 .product-slide__description {
@@ -676,7 +676,7 @@ input[type=radio].visually-hidden {
 
   letter-spacing: 0.36px;
 
-  color: #000;
+  color: #000000;
 }
 
 .product-slide__characteristics th {
@@ -780,7 +780,7 @@ input[type=radio].visually-hidden {
   font-weight: 800;
   line-height: 24px;
 
-  color: #000;
+  color: #000000;
 }
 
 
@@ -788,7 +788,7 @@ input[type=radio].visually-hidden {
 .advantages {
   margin-top: 23px;
 
-  background: linear-gradient(to top, #e5e5e5 75%, #fff 25%);
+  background: linear-gradient(to top, #e5e5e5 75%, #ffffff 25%);
 }
 
 .advantages .container {
@@ -805,7 +805,7 @@ input[type=radio].visually-hidden {
   padding-top: 77px;
   padding-bottom: 45px;
 
-  border-right: 7px solid #000;
+  border-right: 7px solid #000000;
 }
 
 .advantages__button {
@@ -828,7 +828,7 @@ input[type=radio].visually-hidden {
   width: 100%;
   max-width: 100%;
 
-  background-color: #000;
+  background-color: #000000;
 }
 
 .selected .advantages__button {
@@ -850,7 +850,7 @@ input[type=radio].visually-hidden {
   text-transform: uppercase;
 
   color: #f7e184;
-  background-color: #000;
+  background-color: #000000;
 }
 
 .advantages__description {
@@ -887,7 +887,7 @@ input[type=radio].visually-hidden {
 
   letter-spacing: 0.21px;
 
-  color: #000;
+  color: #000000;
 }
 
 .advantages__text {
@@ -991,7 +991,7 @@ input[type=radio].visually-hidden {
 
   letter-spacing: 0.21px;
 
-  color: #000;
+  color: #000000;
 }
 
 .about .title::after {
@@ -1004,7 +1004,7 @@ input[type=radio].visually-hidden {
 
   content: '';
 
-  background-color: #000;
+  background-color: #000000;
 }
 
 .about .text {
@@ -1053,7 +1053,7 @@ input[type=radio].visually-hidden {
 
 /****************************** Подвал сайта footer ******************************/
 .footer {
-  color: #fff;
+  color: #ffffff;
   background-color: #464646;
 }
 
@@ -1115,7 +1115,7 @@ input[type=radio].visually-hidden {
 
 .user-nav__link {
   opacity: 0.7;
-  color: #fff;
+  color: #ffffff;
 }
 
 .user-nav__link:hover,
@@ -1161,7 +1161,7 @@ input[type=radio].visually-hidden {
 }
 
 .footer .navigation__link {
-  color: #fff;
+  color: #ffffff;
 }
 
 .soc-list__item {
@@ -1277,7 +1277,7 @@ input[type=radio].visually-hidden {
 
   letter-spacing: 0.5px;
 
-  color: #000;
+  color: #000000;
 }
 
 .breadcrumbs__list {
@@ -1313,7 +1313,7 @@ input[type=radio].visually-hidden {
   letter-spacing: 0.14px;
 
   opacity: 0.3;
-  color: #000;
+  color: #000000;
 }
 
 .breadcrumbs__link:hover,
@@ -1383,7 +1383,7 @@ input[type=radio].visually-hidden {
   letter-spacing: 4px;
   text-transform: uppercase;
 
-  color: #000;
+  color: #000000;
 }
 
 .filter__label {
@@ -1438,7 +1438,7 @@ input[type=radio].visually-hidden {
   margin-right: 29px;
 
   opacity: 0.3;
-  color: #000;
+  color: #000000;
 }
 
 .sort-sequence__list {
@@ -1459,7 +1459,7 @@ input[type=radio].visually-hidden {
 .catalog__main {
   width: 100%;
 
-  background-image: linear-gradient(to right, #eee 30%, transparent 30%);
+  background-image: linear-gradient(to right, #eeeeee 30%, transparent 30%);
 }
 
 .catalog__main .container {
@@ -1477,7 +1477,7 @@ input[type=radio].visually-hidden {
   height: 100%;
   padding-left: 60px;
 
-  background-color: #eee;
+  background-color: #eeeeee;
 }
 
 /****************************** Список товаров каталога catalog ******************************/
@@ -1544,7 +1544,7 @@ input[type=radio].visually-hidden {
   letter-spacing: 0.13px;
 
   opacity: 0.5;
-  color: #000;
+  color: #000000;
 }
 
 .catalog__item-link {
@@ -1557,7 +1557,7 @@ input[type=radio].visually-hidden {
 
   letter-spacing: 0.18px;
 
-  color: #000;
+  color: #000000;
 }
 
 .catalog__price {
@@ -1643,7 +1643,7 @@ input[type=radio].visually-hidden {
   text-transform: uppercase;
 
   opacity: 0.3;
-  color: #000;
+  color: #000000;
 }
 
 .page-prev.pagination__link {
@@ -1707,7 +1707,7 @@ input[type=radio].visually-hidden {
 
   letter-spacing: 0.18px;
 
-  color: #000;
+  color: #000000;
 }
 
 .filter__group {
@@ -1722,7 +1722,7 @@ input[type=radio].visually-hidden {
   margin-bottom: 35px;
   padding-top: 10px;
 
-  border-top: 2px solid #000;
+  border-top: 2px solid #000000;
 }
 
 .filter-range {
@@ -1759,7 +1759,7 @@ input[type=radio].visually-hidden {
 
   cursor: pointer;
 
-  border: 8px solid #fff;
+  border: 8px solid #ffffff;
   border-radius: 50%;
   background-color: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -1793,7 +1793,7 @@ input[type=radio].visually-hidden {
   display: flex;
 
   opacity: 0.2;
-  color: #000;
+  color: #000000;
 
   justify-content: space-between;
 }
@@ -1833,7 +1833,7 @@ input[type=radio].visually-hidden {
 
   letter-spacing: 0.14px;
 
-  color: #000;
+  color: #000000;
 }
 
 .filter__color-label:last-child {
