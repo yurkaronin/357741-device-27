@@ -1258,8 +1258,8 @@ input[type=radio].visually-hidden {
 
 /****************************** Хлебные крошки breadcrumbs ******************************/
 .breadcrumbs {
-  padding-left: 60px;
   margin-bottom: 43px;
+  padding-left: 60px;
 }
 
 .main__title {
@@ -1315,15 +1315,18 @@ input[type=radio].visually-hidden {
 /****************************** Шапка фильтра каталога ******************************/
 .catalog__header {
   width: 100%;
+
   background-color: #ebebeb;
   background-image: linear-gradient(to right, #dbdbdb 30%, #ebebeb 30%);
 }
 
 .catalog__header .container {
+  position: relative;
+
+  padding: 23px 0;
+
   justify-content: flex-end;
   align-items: center;
-  position: relative;
-  padding: 23px 0;
 }
 
 .sort-sequence__item {
@@ -1340,12 +1343,12 @@ input[type=radio].visually-hidden {
 
 .icon-down::after,
 .icon-up::after {
-  opacity: 0.2;
+  opacity: .2;
 }
 
 .sort-sequence__item:hover,
 .sort-sequence__item:focus {
-  opacity: 0.4;
+  opacity: .4;
 }
 
 .sort-sequence__item:active {
@@ -1358,43 +1361,50 @@ input[type=radio].visually-hidden {
 }
 
 .catalog__subtitle {
-  color: #000000;
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  text-align: center;
 
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  color: #000;
 }
 
 .filter__label {
-  max-width: 328px;
-  width: 100%;
-  background-color: #DBDBDB;
   position: absolute;
-  height: 100%;
+  left: 0;
+
   display: flex;
+
+  width: 100%;
+  max-width: 328px;
+  height: 100%;
+  padding-left: 60px;
+
+  background-color: #dbdbdb;
+
   justify-content: space-between;
   align-items: center;
-  padding-left: 60px;
-  left: 0;
 }
 
 .catalog__order {
-  max-width: 830px;
-  width: 100%;
   display: flex;
+
+  width: 100%;
+  max-width: 830px;
+
   justify-content: space-between;
   align-items: center;
 }
 
 .catalog__order .catalog__subtitle {
-  margin: 0;
-  max-width: 274px;
-  padding-left: 19px;
   width: 100%;
+  max-width: 274px;
+  margin: 0;
+  padding-left: 19px;
 }
 
 .sort-sequence__item {
@@ -1407,13 +1417,15 @@ input[type=radio].visually-hidden {
 }
 
 .sort-order__link {
-  margin-right: 29px;
-  opacity: 0.3;
-  color: #000000;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+
+  margin-right: 29px;
+
+  opacity: .3;
+  color: #000;
 }
 
 .sort-sequence__list {
@@ -1422,7 +1434,7 @@ input[type=radio].visually-hidden {
 
 .sort-order__link:focus,
 .sort-order__link:hover {
-  opacity: 0.6;
+  opacity: .6;
 }
 
 .sort-order__item .active,
@@ -1433,31 +1445,36 @@ input[type=radio].visually-hidden {
 /****************************** Фильтр каталога filter ******************************/
 .catalog__main {
   width: 100%;
-  background-image: linear-gradient(to right, #ebebeb 30%, transparent 30%);
+
+  background-image: linear-gradient(to right, #eee 30%, transparent 30%);
 }
 
 .catalog__main .container {
-  justify-content: flex-end;
   position: relative;
 
+  justify-content: flex-end;
 }
 
 .filter__item {
-  max-width: 328px;
-  width: 100%;
-  background-color: #efefef;
   position: absolute;
+  left: 0;
+
+  width: 100%;
+  max-width: 328px;
   height: 100%;
   padding-left: 60px;
-  left: 0;
+
+  background-color: #eee;
 }
+
 /****************************** Список товаров каталога catalog ******************************/
 .catalog {
-  max-width: 830px;
   width: 100%;
+  max-width: 830px;
+  padding: 69px 0 78px 72px;
+
   justify-content: space-between;
   align-items: center;
-  padding: 69px 0 41px 72px;
 }
 
 .catalog__list {
@@ -1465,71 +1482,99 @@ input[type=radio].visually-hidden {
 }
 
 .catalog__item {
-  max-width: 360px;
-  width: 100%;
-  margin-bottom: 49px;
+  position: relative;
 
+  width: 100%;
+  max-width: 360px;
+  margin-bottom: 49px;
+}
+
+.catalog__list .label-new::before {
+  position: absolute;
+  z-index: 1;
+  top: 27px;
+  right: 27px;
+
+  content: url(../img/label/label-new.png);
 }
 
 .catalog__wrapper {
-  margin-bottom: 31px;
   position: relative;
+
   overflow: hidden;
+
   max-height: 380px;
+  margin-bottom: 31px;
 }
 
 .catalog__details {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+
   display: flex;
+
+  max-width: 100%;
+
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 100%;
   align-items: baseline;
-  font-family: 'Gilroy', 'Arial', sans-serif;
 }
 
 
 .catalog__compare-link {
-  max-width: 150px;
-  opacity: 0.5;
-  color: #000000;
-  font-family: "Open Sans", 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 13px;
   font-weight: 300;
   line-height: 36px;
 
-  letter-spacing: 0.13px;
+  max-width: 150px;
+
+  letter-spacing: .13px;
+
+  opacity: .5;
+  color: #000;
 }
 
 .catalog__item-link {
-  color: #000000;
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
-  letter-spacing: 0.18px;
+
   max-width: 255px;
+
+  letter-spacing: .18px;
+
+  color: #000;
 }
 
 .catalog__price {
-  color: #464646;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
-  letter-spacing: 0.16px;
+
   margin: 0;
+
+  letter-spacing: .16px;
+
+  color: #464646;
 }
 
 .catalog__options {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #eeeeeec7;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  z-index: 2;
   top: 0;
   left: 0;
+
+  display: none;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #eeec7;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .catalog__wrapper:hover .catalog__options,
@@ -1543,7 +1588,86 @@ input[type=radio].visually-hidden {
 }
 
 .catalog__compare-link:active {
-  opacity: 0.2;
+  opacity: .2;
+}
+
+/****************************** Пагинация pagination ******************************/
+.pagination {
+  width: 100%;
+  margin-top: -14px;
+
+  background-color: #ebebeb;
+}
+
+.pagination__list {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page-prev {
+  margin-right: auto;
+  padding-left: 27px;
+}
+
+.page-next {
+  margin-right: 0;
+  margin-left: auto;
+  padding-right: 27px;
+}
+
+.pagination__link {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+
+  display: block;
+
+  padding: 23px 13px;
+
+  cursor: pointer;
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
+
+  opacity: .3;
+  color: #000;
+}
+
+.page-prev.pagination__link {
+  padding: 22px 29px;
+}
+
+.page-next .pagination__link {
+  padding: 20px 25px;
+}
+
+.pagination__link:hover,
+.pagination__link:focus {
+  opacity: .6;
+}
+
+.pagination__link:active {
+  opacity: 1;
+}
+
+.page-next .pagination__link,
+.page-prev .pagination__link {
+  margin: 0;
+  padding-right: 0;
+  padding-left: 0;
+
+  opacity: 1;
+}
+
+.page-next:focus,
+.page-prev:focus,
+.page-next:hover,
+.page-prev:hover {
+  background-color: #d8d8d8;
+}
+
+.pagination__item .active {
+  opacity: 1;
 }
 
 /****************************** Подвал footer ******************************/
@@ -1556,6 +1680,122 @@ input[type=radio].visually-hidden {
   margin-left: 10px;
 }
 
-/****************************** Модалка с формой обр. связи modal__write-us ******************************/
+/****************************** Блок с фильтрами сортировки товаров на странице Каталог filter ******************************/
+.filter__item {
+  padding-top: 69px;
+  padding-right: 68px;
+}
+
+.filter__view {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+
+  letter-spacing: .18px;
+
+  color: #000;
+}
+
+.filter__group {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.filter__view {
+  width: 100%;
+  margin-bottom: 35px;
+  padding-top: 10px;
+
+  border-top: 2px solid #000;
+}
+
+.filter-range {
+  width: 206px;
+  margin-bottom: 30px;
+}
+
+.range-controls {
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  margin-bottom: 10px;
+
+  background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+  width: 60%;
+  height: 2px;
+
+  background-color: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: -8px;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle:active {
+  width: 24px;
+  height: 24px;
+}
+
+.range-controls .toggle-min {
+  left: 0;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls label {
+  display: inline-block;
+
+  width: 50%;
+}
+
+.price-controls {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+
+  display: flex;
+
+  opacity: .2;
+  color: #000;
+
+  justify-content: space-between;
+}
+
+.price-controls input {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+
+  max-width: 54px;
+
+  border: none;
+  background-color: transparent;
+}
+
 
 /****************************** Модалка с картой  modal__map ******************************/

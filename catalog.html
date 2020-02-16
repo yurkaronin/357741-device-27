@@ -148,10 +148,27 @@
             <fieldset class="filter__group">
               <legend class="filter__view">Стоимость</legend>
 
-              <!-- тут будет двойной бегунок для выбора ценового диапазона  -->
+              <div class="filter-range">
+                <!-- Ползунки -->
+                <div class="range-controls">
+                  <!-- Прогресс-бар -->
+                  <div class="scale">
+                    <!-- выбранный диапазон -->
+                    <div class="bar"></div>
+                  </div>
+                  <!-- ползунки  -->
+                  <div class="toggle  toggle-min"></div>
+                  <div class="toggle  toggle-max"></div>
 
-              <span class="filter__price  min-price">от 0</span>
-              <span class="filter__price  max-price">до 5000</span>
+                </div>
+                <!-- Вывод диапазона цен -->
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="number" value="5000"></label>
+                </div>
+
+              </div>
+
             </fieldset>
 
             <fieldset class="filter__group">
@@ -201,51 +218,41 @@
               <div class="catalog__wrapper">
                 <img class="catalog__image" src="img/catalog/item-1.jpg" alt="Карточка товара Селфи-палка для любителей"
                   width="360" height="380">
-
                 <div class="catalog__options">
                   <a class="catalog__basket-button  button" href="">В корзину</a>
                   <a class="catalog__compare-link  link" href="">Добавить к сравнению</a>
                 </div>
               </div>
-
               <div class="catalog__details">
                 <a class="catalog__item-link" href="">Любительская селфи&#8209;палка</a>
                 <p class="catalog__price">500 руб.</p>
               </div>
-
             </li>
 
             <li class="catalog__item">
-
               <div class="catalog__wrapper">
                 <img class="catalog__image" src="img/catalog/item-2.jpg" alt="Карточка товара Селфи-палка для профи"
                   width="360" height="380">
-
                 <div class="catalog__options">
                   <a class="catalog__basket-button  button" href="">В корзину</a>
                   <a class="catalog__compare-link  link" href="">Добавить к сравнению</a>
                 </div>
               </div>
-
               <div class="catalog__details">
                 <a class="catalog__item-link" href="">Профессиональная селфи&#8209;палка</a>
                 <p class="catalog__price">1 500 руб.</p>
               </div>
-
             </li>
 
             <li class="catalog__item">
-
               <div class="catalog__wrapper">
                 <img class="catalog__image" src="img/catalog/item-3.jpg"
-                alt="Карточка товара водонепроницаемая селфи-палка" width="360" height="380">
-
+                  alt="Карточка товара водонепроницаемая селфи-палка" width="360" height="380">
                 <div class="catalog__options">
                   <a class="catalog__basket-button  button" href="">В корзину</a>
                   <a class="catalog__compare-link  link" href="">Добавить к сравнению</a>
                 </div>
               </div>
-
               <div class="catalog__details">
                 <a class="catalog__item-link" href="">Непотопляемая селфи&#8209;палка</a>
                 <p class="catalog__price">2 500 руб.</p>
@@ -253,27 +260,43 @@
             </li>
 
             <li class="catalog__item  label-new">
-
               <div class="catalog__wrapper">
                 <img class="catalog__image" src="img/catalog/item-4.jpg" alt="Карточка товара селфи-палка в виде руки"
-                width="360" height="380">
-
+                  width="360" height="380">
                 <div class="catalog__options">
                   <a class="catalog__basket-button  button" href="">В корзину</a>
                   <a class="catalog__compare-link  link" href="">Добавить к сравнению</a>
                 </div>
               </div>
-
               <div class="catalog__details">
                 <a class="catalog__item-link" href="">Cелфи&#8209;палка «Следуй за мной»</a>
                 <p class="catalog__price">4 900 руб.</p>
               </div>
             </li>
           </ul>
+
+          <div class="pagination">
+            <ul class="pagination__list  list  flex">
+              <li class="pagination__item  page-prev">
+                <a class="pagination__link" href="#">Назад</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link  active" href="#" aria-label="Страница 1">1</a>
+              </li>
+              <li class="pagination__item  page-item">
+                <a class="pagination__link" href="#" aria-label="Страница 2">2</a>
+              </li>
+              <li class="pagination__item  page-item">
+                <a class="pagination__link" href="#" aria-label="Страница 3">3</a>
+              </li>
+              <li class="pagination__item  page-next">
+                <a class="pagination__link" href="#">Вперед</a>
+              </li>
+            </ul>
+          </div>
+
         </section>
-        <div class="pagination">
-          <!-- тут будет пагинация  -->
-        </div>
+
       </div>
     </div>
 
