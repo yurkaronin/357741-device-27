@@ -1894,3 +1894,6 @@ input[type=radio].visually-hidden {
 }
 
 /****************************** Модалка с картой  modal__map ******************************/
+.modal {
+  display: none;
+}
