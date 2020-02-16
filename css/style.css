@@ -1256,6 +1256,10 @@ input[type=radio].visually-hidden {
   min-height: 187px;
 }
 
+.user-nav__item .active {
+  opacity: 1;
+}
+
 /****************************** Хлебные крошки breadcrumbs ******************************/
 .breadcrumbs {
   margin-bottom: 43px;
@@ -1310,6 +1314,15 @@ input[type=radio].visually-hidden {
 
   opacity: .3;
   color: #000;
+}
+
+.breadcrumbs__link:hover,
+.breadcrumbs__link:focus {
+  opacity: .6;
+}
+
+.breadcrumbs__link:active {
+  opacity: .1;
 }
 
 /****************************** Шапка фильтра каталога ******************************/
@@ -1571,7 +1584,7 @@ input[type=radio].visually-hidden {
   width: 100%;
   height: 100%;
 
-  background-color: #eeec7;
+  background-color: rgba(238, 238, 238, .7);
 
   justify-content: center;
   align-items: center;
@@ -1795,6 +1808,89 @@ input[type=radio].visually-hidden {
 
   border: none;
   background-color: transparent;
+}
+
+.color-group,
+.options-group {
+  flex-direction: column;
+}
+
+.color-group .filter__view {
+  margin-bottom: 33px;
+}
+
+.filter__color-label {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+
+  position: relative;
+
+  max-width: 200px;
+  margin-bottom: 22px;
+  padding-left: 40px;
+
+  letter-spacing: .14px;
+
+  color: #000;
+}
+
+.filter__color-label:last-child {
+  margin-bottom: 44px;
+}
+
+.options-group .filter__view {
+  margin-bottom: 29px;
+}
+
+/* безумное нагромождение вложенности и типизации элементов. но работает отлично! */
+.filter__group input[type=checkbox]+label::before,
+.filter__group input[type=radio]+label::before {
+  position: absolute;
+  top: -5px;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  content: '';
+
+  background-repeat: no-repeat;
+}
+
+.filter__group input[type=radio]+label::before {
+  width: 26px;
+  height: 26px;
+}
+
+.filter__group input[type=checkbox]+label::before {
+  background-image: url(../img/icons/checkbox-off.svg);
+}
+
+.filter__group input[type=radio]+label::before {
+  background-image: url(../img/icons/radio-off.svg);
+}
+
+.filter__group input[type=checkbox]:checked+label::before,
+.filter__group input[type=radio]:checked+label::before {
+  width: 27px;
+
+  background-image: url(../img/icons/checkbox-on.svg);
+}
+
+.filter__group input[type=checkbox]:checked+label::before {
+  background-image: url(../img/icons/checkbox-on.svg);
+}
+
+.filter__group input[type=radio]:checked+label::before {
+  width: 27px;
+
+  background-image: url(../img/icons/radio-on.svg);
+}
+
+.filter__button {
+  width: 100%;
 }
 
 
