@@ -72,7 +72,7 @@ a {
   margin: 0;
   padding: 0;
 
-  letter-spacing: .15px;
+  letter-spacing: 0.15px;
 
   color: #000;
 }
@@ -163,11 +163,11 @@ input[type=radio].visually-hidden {
 .button:hover::before {
   height: 100%;
 
-  transition: height .5s linear;
+  transition: height 0.5s linear;
 }
 
 .button:active {
-  color: rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* /конец БЭМ-блок: кнопка */
@@ -179,7 +179,7 @@ input[type=radio].visually-hidden {
   font-weight: 700;
   line-height: 48px;
 
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
 
   color: #ffc600;
@@ -194,12 +194,12 @@ input[type=radio].visually-hidden {
 }
 
 .logo-link:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .logo-link:active,
 .logo-link:focus {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 /* /конец БЭМ-блок: логотип */
@@ -264,7 +264,7 @@ input[type=radio].visually-hidden {
   margin: 0;
   padding: 8px 0 8px 40px;
 
-  letter-spacing: .15px;
+  letter-spacing: 0.15px;
 
   opacity: .3;
   color: #000;
@@ -275,7 +275,7 @@ input[type=radio].visually-hidden {
 
 .header__input:active,
 .header__input:hover {
-  opacity: .6;
+  opacity: 0.6;
   color: #000;
   border-bottom-color: #000;
   outline: 0;
@@ -317,7 +317,7 @@ input[type=radio].visually-hidden {
 .button--search:active {
   visibility: visible;
 
-  color: rgba(255, 255, 255, .3);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #000;
 }
 
@@ -368,11 +368,11 @@ input[type=radio].visually-hidden {
 
 .user-nav__link:focus,
 .user-nav__link:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .user-nav__link:active {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 
@@ -429,7 +429,7 @@ input[type=radio].visually-hidden {
 
   content: '';
 
-  opacity: .3;
+  opacity: 0.3;
   background-image: url(../img/icons/plus.svg);
 }
 
@@ -474,11 +474,11 @@ input[type=radio].visually-hidden {
 
 .navigation__link:focus,
 .navigation__link:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .navigation__link:active {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 /* второй уровень меню */
@@ -529,11 +529,11 @@ input[type=radio].visually-hidden {
 
 .catalog-nav__link:focus,
 .catalog-nav__link:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .catalog-nav__link:active {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 /* Показ дополнительного меню при наведении*/
@@ -595,7 +595,7 @@ input[type=radio].visually-hidden {
   content: counters(li, '.', decimal-leading-zero);
   counter-increment: li;
   text-align: center;
-  letter-spacing: .36px;
+  letter-spacing: 0.36px;
 
   color: #fff;
 }
@@ -643,7 +643,7 @@ input[type=radio].visually-hidden {
   margin-top: 65px;
   margin-bottom: 18px;
 
-  letter-spacing: .17px;
+  letter-spacing: 0.17px;
 
   color: #000;
 }
@@ -674,7 +674,7 @@ input[type=radio].visually-hidden {
   min-width: 148px;
   max-width: 170px;
 
-  letter-spacing: .36px;
+  letter-spacing: 0.36px;
 
   color: #000;
 }
@@ -766,7 +766,7 @@ input[type=radio].visually-hidden {
 }
 
 .product-cat__image-wrap:active .product-cat__image {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .product-cat__image--special {
@@ -885,7 +885,7 @@ input[type=radio].visually-hidden {
   margin: 0;
   margin-bottom: 30px;
 
-  letter-spacing: .21px;
+  letter-spacing: 0.21px;
 
   color: #000;
 }
@@ -940,7 +940,7 @@ input[type=radio].visually-hidden {
 }
 
 .product-brands__image {
-  opacity: .2;
+  opacity: 0.2;
 
   filter: grayscale(100%);
 }
@@ -989,7 +989,7 @@ input[type=radio].visually-hidden {
 
   margin: 45px 0;
 
-  letter-spacing: .21px;
+  letter-spacing: 0.21px;
 
   color: #000;
 }
@@ -1114,7 +1114,7 @@ input[type=radio].visually-hidden {
 }
 
 .user-nav__link {
-  opacity: .7;
+  opacity: 0.7;
   color: #fff;
 }
 
@@ -1124,7 +1124,7 @@ input[type=radio].visually-hidden {
 }
 
 .user-nav__link:active {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .footer__wrapper {
@@ -1181,16 +1181,16 @@ input[type=radio].visually-hidden {
   width: 100%;
   max-width: 32px;
 
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .soc-list__link:hover,
 .soc-list__link:focus {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .soc-list__link:active {
-  opacity: .1;
+  opacity: 0.1;
 }
 
 .icon-fb::after {
@@ -1218,11 +1218,11 @@ input[type=radio].visually-hidden {
 
 .footer__academy-logo:hover,
 .footer__academy-logo:focus {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .footer__academy-logo:active {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 /****************************** Страница каталога catalog.html ******************************/
@@ -1275,7 +1275,7 @@ input[type=radio].visually-hidden {
   margin: 0;
   margin-bottom: 25px;
 
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 
   color: #000;
 }
@@ -1310,19 +1310,19 @@ input[type=radio].visually-hidden {
 
   padding-right: 12px;
 
-  letter-spacing: .14px;
+  letter-spacing: 0.14px;
 
-  opacity: .3;
+  opacity: 0.3;
   color: #000;
 }
 
 .breadcrumbs__link:hover,
 .breadcrumbs__link:focus {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .breadcrumbs__link:active {
-  opacity: .1;
+  opacity: 0.1;
 }
 
 /****************************** Шапка фильтра каталога ******************************/
@@ -1356,12 +1356,12 @@ input[type=radio].visually-hidden {
 
 .icon-down::after,
 .icon-up::after {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .sort-sequence__item:hover,
 .sort-sequence__item:focus {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .sort-sequence__item:active {
@@ -1437,7 +1437,7 @@ input[type=radio].visually-hidden {
 
   margin-right: 29px;
 
-  opacity: .3;
+  opacity: 0.3;
   color: #000;
 }
 
@@ -1447,7 +1447,7 @@ input[type=radio].visually-hidden {
 
 .sort-order__link:focus,
 .sort-order__link:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .sort-order__item .active,
@@ -1541,9 +1541,9 @@ input[type=radio].visually-hidden {
 
   max-width: 150px;
 
-  letter-spacing: .13px;
+  letter-spacing: 0.13px;
 
-  opacity: .5;
+  opacity: 0.5;
   color: #000;
 }
 
@@ -1555,7 +1555,7 @@ input[type=radio].visually-hidden {
 
   max-width: 255px;
 
-  letter-spacing: .18px;
+  letter-spacing: 0.18px;
 
   color: #000;
 }
@@ -1567,7 +1567,7 @@ input[type=radio].visually-hidden {
 
   margin: 0;
 
-  letter-spacing: .16px;
+  letter-spacing: 0.16px;
 
   color: #464646;
 }
@@ -1584,7 +1584,7 @@ input[type=radio].visually-hidden {
   width: 100%;
   height: 100%;
 
-  background-color: rgba(238, 238, 238, .7);
+  background-color: rgba(238, 238, 238, 0.7);
 
   justify-content: center;
   align-items: center;
@@ -1601,7 +1601,7 @@ input[type=radio].visually-hidden {
 }
 
 .catalog__compare-link:active {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 /****************************** Пагинация pagination ******************************/
@@ -1642,7 +1642,7 @@ input[type=radio].visually-hidden {
   letter-spacing: 3.7px;
   text-transform: uppercase;
 
-  opacity: .3;
+  opacity: 0.3;
   color: #000;
 }
 
@@ -1656,7 +1656,7 @@ input[type=radio].visually-hidden {
 
 .pagination__link:hover,
 .pagination__link:focus {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .pagination__link:active {
@@ -1705,7 +1705,7 @@ input[type=radio].visually-hidden {
   font-weight: 800;
   line-height: 24px;
 
-  letter-spacing: .18px;
+  letter-spacing: 0.18px;
 
   color: #000;
 }
@@ -1792,7 +1792,7 @@ input[type=radio].visually-hidden {
 
   display: flex;
 
-  opacity: .2;
+  opacity: 0.2;
   color: #000;
 
   justify-content: space-between;
@@ -1831,7 +1831,7 @@ input[type=radio].visually-hidden {
   margin-bottom: 22px;
   padding-left: 40px;
 
-  letter-spacing: .14px;
+  letter-spacing: 0.14px;
 
   color: #000;
 }
@@ -1892,6 +1892,5 @@ input[type=radio].visually-hidden {
 .filter__button {
   width: 100%;
 }
-
 
 /****************************** Модалка с картой  modal__map ******************************/
