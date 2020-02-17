@@ -70,11 +70,13 @@ a {
   line-height: 24px;
 
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+  min-width: 1200px;
 
   letter-spacing: 0.15px;
 
   color: #000000;
+
 }
 
 .visually-hidden:not(:focus),
@@ -1118,6 +1120,10 @@ input[type=radio].visually-hidden {
   color: #ffffff;
 }
 
+.user-nav__item .active {
+  opacity: 1;
+}
+
 .user-nav__link:hover,
 .user-nav__link:focus {
   opacity: 1.0;
@@ -1137,6 +1143,7 @@ input[type=radio].visually-hidden {
   width: 100%;
   max-width: 210px;
   margin: 0;
+  color: inherit;
 }
 
 .footer__text:last-child {
@@ -1252,12 +1259,8 @@ input[type=radio].visually-hidden {
   padding-left: 25px;
 }
 
-.inner-page .header .container {
+.header .header__wrapper {
   min-height: 187px;
-}
-
-.user-nav__item .active {
-  opacity: 1;
 }
 
 /****************************** Хлебные крошки breadcrumbs ******************************/
@@ -1330,12 +1333,10 @@ input[type=radio].visually-hidden {
   width: 100%;
 
   background-color: #ebebeb;
-  background-image: linear-gradient(to right, #dbdbdb 30%, #ebebeb 30%);
+  background-image: linear-gradient(to right, #dbdbdb 36.9%, #ebebeb 36.9%);
 }
 
 .catalog__header .container {
-  position: relative;
-
   padding: 23px 0;
 
   justify-content: flex-end;
@@ -1374,6 +1375,8 @@ input[type=radio].visually-hidden {
 }
 
 .catalog__subtitle {
+  max-width: 100%;
+
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 800;
@@ -1387,8 +1390,6 @@ input[type=radio].visually-hidden {
 }
 
 .filter__label {
-  position: absolute;
-  left: 0;
 
   display: flex;
 
@@ -1459,7 +1460,7 @@ input[type=radio].visually-hidden {
 .catalog__main {
   width: 100%;
 
-  background-image: linear-gradient(to right, #eeeeee 30%, transparent 30%);
+  background-image: linear-gradient(to right, #eeeeee 36.9%, transparent 36.9%);
 }
 
 .catalog__main .container {
@@ -1684,11 +1685,11 @@ input[type=radio].visually-hidden {
 }
 
 /****************************** Подвал footer ******************************/
-.inner-page .footer .user-nav__item:last-child {
+.footer .user-nav__item--cart {
   margin-left: 10px;
 }
 
-.inner-page .footer .user-nav__item--logout {
+.footer .user-nav__item--logout {
   max-width: 60px;
   margin-left: 10px;
 }
