@@ -200,7 +200,7 @@ input[type=radio].visually-hidden {
   padding: 40px 0 41px;
 }
 
-.header .container {
+.header__wrapper {
   position: relative;
 
   min-height: 300px;
@@ -255,7 +255,7 @@ input[type=radio].visually-hidden {
 
   letter-spacing: 0.15px;
 
-  opacity: .3;
+  opacity: 0.3;
   color: #000000;
   border: none;
   border-bottom: 2px solid transparent;
@@ -337,10 +337,6 @@ input[type=radio].visually-hidden {
   text-align: left;
 }
 
-.header .user__login {
-  padding-left: 27px;
-}
-
 .user-nav__link {
   font-size: 15px;
   font-weight: 300;
@@ -350,6 +346,11 @@ input[type=radio].visually-hidden {
 
   padding-left: 20px;
 }
+
+.user__login {
+  padding-left: 27px;
+}
+
 
 .header .user-nav__link {
   color: #000000;
@@ -1246,7 +1247,7 @@ input[type=radio].visually-hidden {
   padding-left: 25px;
 }
 
-.header .header__wrapper {
+.inner-page .header__wrapper {
   min-height: 187px;
 }
 
