@@ -175,18 +175,6 @@ input[type=radio].visually-hidden {
 /* /конец БЭМ-блок: кнопка */
 
 /* БЭМ-блок: логотип */
-.logo-link {
-  font-family: 'Gilroy', 'Arial', sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 48px;
-
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-
-  color: #ffc600;
-}
-
 .header .logo-link {
   position: absolute;
   top: -24px;
