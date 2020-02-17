@@ -1603,13 +1603,11 @@ input[type=radio].visually-hidden {
 
 .page-prev {
   margin-right: auto;
-  padding-left: 27px;
 }
 
 .page-next {
   margin-right: 0;
   margin-left: auto;
-  padding-right: 27px;
 }
 
 .pagination__link {
@@ -1630,14 +1628,6 @@ input[type=radio].visually-hidden {
   color: #000000;
 }
 
-.page-prev.pagination__link {
-  padding: 22px 29px;
-}
-
-.page-next .pagination__link {
-  padding: 20px 25px;
-}
-
 .pagination__link:hover,
 .pagination__link:focus {
   opacity: 0.6;
@@ -1650,8 +1640,7 @@ input[type=radio].visually-hidden {
 .page-next .pagination__link,
 .page-prev .pagination__link {
   margin: 0;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 22px 27px;
 
   opacity: 1;
 }
