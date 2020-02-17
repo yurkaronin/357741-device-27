@@ -70,7 +70,6 @@ a {
   line-height: 24px;
 
   margin: 0;
-  padding: 0 20px;
   min-width: 1200px;
 
   letter-spacing: 0.15px;
@@ -1321,12 +1320,10 @@ input[type=radio].visually-hidden {
   width: 100%;
 
   background-color: #ebebeb;
-  background-image: linear-gradient(to right, #dbdbdb 36.9%, #ebebeb 36.9%);
+  background-image: linear-gradient(to right, #dbdbdb 28%, #ebebeb 28%);
 }
 
 .catalog__header .container {
-  padding: 23px 0;
-
   justify-content: flex-end;
   align-items: center;
 }
@@ -1384,6 +1381,7 @@ input[type=radio].visually-hidden {
   width: 100%;
   max-width: 328px;
   height: 100%;
+  padding: 23px 0;
   padding-left: 60px;
 
   background-color: #dbdbdb;
@@ -1397,6 +1395,7 @@ input[type=radio].visually-hidden {
 
   width: 100%;
   max-width: 830px;
+  padding: 23px 0;
 
   justify-content: space-between;
   align-items: center;
@@ -1448,7 +1447,7 @@ input[type=radio].visually-hidden {
 .catalog__main {
   width: 100%;
 
-  background-image: linear-gradient(to right, #eeeeee 36.9%, transparent 36.9%);
+  background-image: linear-gradient(to right, #eeeeee 28%, transparent 28%);
 }
 
 .catalog__main .container {
@@ -1458,9 +1457,6 @@ input[type=radio].visually-hidden {
 }
 
 .filter__item {
-  position: absolute;
-  left: 0;
-
   width: 100%;
   max-width: 328px;
   height: 100%;
