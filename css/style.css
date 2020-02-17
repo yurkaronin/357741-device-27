@@ -1459,7 +1459,6 @@ input[type=radio].visually-hidden {
 .filter__item {
   width: 100%;
   max-width: 328px;
-  height: 100%;
   padding-left: 60px;
 
   background-color: #eeeeee;
