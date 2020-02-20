@@ -1296,6 +1296,11 @@ input[type=radio].visually-hidden {
   text-align: right;
 }
 
+.footer__academy-logo {
+  fill: #ffc600;
+  width: 26.943px;
+}
+
 .footer__academy-logo:hover,
 .footer__academy-logo:focus {
   opacity: 0.6;
@@ -2028,7 +2033,165 @@ input[type=radio].visually-hidden {
   width: 100%;
 }
 
-/****************************** Модалка с картой  modal__map ******************************/
+/****************************** Модалки ******************************/
 .modal {
+  position: fixed;
+  z-index: 4;
+  top: 120px;
+  left: 50%;
+
   display: none;
+
+  max-width: 960px;
+
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  -webkit-box-shadow: 0 10px 20px 0 rgba(4, 6, 6, .2);
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, .2);
+}
+
+.modal-show {
+  display: block;
+
+  -webkit-animation: bounce 0.6s;
+
+  animation: bounce 0.6s;
+}
+
+.modal__write-us {
+  width: 960px;
+  padding: 96px 100px 80px;
+
+  background-color: #fff;
+}
+
+.modal__container {
+  margin-bottom: 55px;
+
+  -webkit-box-pack: justify;
+
+  -ms-flex-pack: justify;
+
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.modal__item-wrapper {
+  width: 100%;
+  max-width: 47%;
+}
+
+.modal__item-wrapper:last-child {
+  width: 100%;
+  max-width: 100%;
+}
+
+.write-us__label {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+
+  display: block;
+
+  max-width: 70%;
+  margin-bottom: 13px;
+
+  color: #000;
+}
+
+.write-us__input,
+.write-us__input--text {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+
+  display: block;
+
+  width: 100%;
+  padding: 16px 20px;
+
+  letter-spacing: 0;
+
+  opacity: 0.4;
+  color: #464646;
+  border: 3px solid transparent;
+  outline: 0;
+  background-color: #ebebeb;
+}
+
+.write-us__input:hover,
+.write-us__input:active,
+.write-us__input--text:hover,
+.write-us__input--text:active {
+  opacity: 0.8;
+}
+
+.write-us__input:focus,
+.write-us__input--text:focus {
+  opacity: 0.5;
+  border: 3px solid #f0c52e;
+  background-color: #fff;
+}
+
+.write-us__input:not(:placeholder-shown):invalid {
+  opacity: 0.5;
+  background-color: #edb5b5;
+}
+
+.close-btn {
+  font-size: 0;
+
+  position: absolute;
+  z-index: 3;
+  top: 25px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  cursor: pointer;
+
+  opacity: 0.5;
+  border: 0;
+  border-radius: 50%;
+  background-color: #f0c52e;
+}
+
+.close-btn:active {
+  opacity: 0.3;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  opacity: 1;
+}
+
+
+.close-btn::after,
+.close-btn::before {
+  position: absolute;
+  top: 26px;
+  left: 14px;
+
+  width: 50%;
+  height: 2px;
+
+  content: '';
+
+  background-color: #fff;
+}
+
+.close-btn::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.close-btn::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
