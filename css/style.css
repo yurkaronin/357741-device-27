@@ -711,6 +711,7 @@ input[type=radio].visually-hidden {
   position: absolute;
   top: 304px;
   right: 63px;
+  z-index: 2;
 }
 
 .slider__switch-item {
