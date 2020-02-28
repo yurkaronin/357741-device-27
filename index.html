@@ -338,11 +338,11 @@
           <h2 class="contacts__title  title">Контакты</h2>
           <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
             работоспособность покупки. Всякое бывает.</p>
-          <a class="contacts__map-link" href="">
+          <a class="contacts__map-link  contacts__button-map" href="">
             <img class="contacts__map-image" src="img/map.jpg"
               alt="Фото карты с расположением офиса: г. Москва, ул. Строителей, 15">
           </a>
-          <a class="button" href="">Напишите нам</a>
+          <a class="button  button__modal-call" href="contact.html">Напишите нам</a>
 
         </div>
       </div>
@@ -415,6 +415,7 @@
     </div>
   </footer>
 
+<!-- ............. Диалоговые окна ..............-->
   <section class="modal__write-us  modal">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
@@ -422,19 +423,19 @@
 
         <p class="modal__item-wrapper">
           <label class="write-us__label" for="write-us-name">Ваше имя:</label>
-          <input class="write-us__input" name="name" id="write-us-name" type="text" placeholder="Имя Фамилия" required>
+          <input class="write-us__input" name="name" id="write-us-name" type="text" placeholder="Имя Фамилия" >
         </p>
 
         <p class="modal__item-wrapper">
           <label class="write-us__label" for="write-us-email">Ваш e-mail:</label>
           <input class="write-us__input" name="email" id="write-us-email" type="email" placeholder="email@example.com"
-            required>
+            >
         </p>
 
         <p class="modal__item-wrapper">
           <label class="write-us__label" for="write-us-message">Текст письма:</label>
           <textarea class="write-us__input--text" name="message" id="write-us-message" cols="30" rows="3"
-            required>В свободной форме</textarea>
+            >В свободной форме</textarea>
         </p>
 
       </div>
@@ -447,11 +448,11 @@
 
   <section class="modal__map  modal">
     <h2 class="visually-hidden">Наш магазин на карте</h2>
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1kLm6pBLXB7Ek_a_JMJ-ivWVjg94XIIB2" width="960"
+      <iframe src="https://www.google.com/maps/d/embed?mid=1kLm6pBLXB7Ek_a_JMJ-ivWVjg94XIIB2" width="960"
       height="559"></iframe>
     <button class="close-btn" type="button">Закрыть окно</button>
   </section>
-
+<script src="js/script.js"></script>
 </body>
 
 </html>
