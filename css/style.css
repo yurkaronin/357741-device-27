@@ -375,6 +375,7 @@ input[type=radio].visually-hidden {
 .user-nav__link::before {
   position: absolute;
   left: 0;
+  top: -5px;
 
   display: block;
 
@@ -1167,10 +1168,15 @@ input[type=radio].visually-hidden {
   justify-content: flex-end;
 }
 
+.footer .user-nav__item--compare {
+  margin-left: 5px;
+  max-width: 90px;
+}
+
 .footer .user-nav__item:last-child {
   width: 100%;
   max-width: 100px;
-  margin-left: 15px;
+  margin-left: 22px;
 
   text-align: right;
 }
