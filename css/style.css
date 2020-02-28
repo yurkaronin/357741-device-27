@@ -374,8 +374,8 @@ input[type=radio].visually-hidden {
 
 .user-nav__link::before {
   position: absolute;
-  left: 0;
   top: -5px;
+  left: 0;
 
   display: block;
 
@@ -964,11 +964,13 @@ input[type=radio].visually-hidden {
 }
 
 .product-brands__link {
-  display: block;
-  width: 100%;
-  height: 100%;
   position: relative;
   z-index: 1;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
 }
 
 .product-brands__link:hover img {
@@ -979,14 +981,15 @@ input[type=radio].visually-hidden {
 .brands-logo-2::after,
 .brands-logo-3::after,
 .brands-logo-4::after {
-  content: '';
   position: absolute;
-  width: 260px;
-  height: 100px;
+  z-index: -1;
   top: 0;
   left: 0;
-  z-index: -1;
 
+  width: 260px;
+  height: 100px;
+
+  content: '';
 }
 
 .brands-logo-1::after {
@@ -1169,8 +1172,8 @@ input[type=radio].visually-hidden {
 }
 
 .footer .user-nav__item--compare {
-  margin-left: 5px;
   max-width: 90px;
+  margin-left: 5px;
 }
 
 .footer .user-nav__item:last-child {
@@ -2223,7 +2226,6 @@ input[type=radio].visually-hidden {
 /****************************** стили для IE ******************************/
 @media screen and (-ms-high-contrast: active),
 (-ms-high-contrast: none) {
-
   .product-cat__image--special {
     right: 23%;
   }
@@ -2231,5 +2233,4 @@ input[type=radio].visually-hidden {
   .footer__text:last-child {
     text-align: right;
   }
-
 }
