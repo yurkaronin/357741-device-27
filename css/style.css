@@ -180,8 +180,8 @@ input[type=radio].visually-hidden {
 /* БЭМ-блок: логотип */
 .header .logo-link {
   position: absolute;
-  top: -20px;
-  left: 57px;
+  top: -18px;
+  left: 62px;
 
   color: #000000;
 }
@@ -600,6 +600,7 @@ input[type=radio].visually-hidden {
   right: 182px;
 
   display: inline-block;
+  vertical-align: baseline;
 
   width: 50px;
 
@@ -1130,7 +1131,7 @@ input[type=radio].visually-hidden {
 }
 
 .footer__top {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -1192,8 +1193,7 @@ input[type=radio].visually-hidden {
   text-align: right;
 }
 
-.user-nav__link {
-  opacity: 0.7;
+.footer .user-nav__link {
   color: #ffffff;
 }
 
@@ -1211,7 +1211,7 @@ input[type=radio].visually-hidden {
 }
 
 .footer__wrapper {
-  margin-bottom: 65px;
+  margin-bottom: 61px;
 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -1222,6 +1222,9 @@ input[type=radio].visually-hidden {
   width: 100%;
   max-width: 210px;
   margin: 0;
+  font-size: 15px;
+  line-height: 30px;
+  margin-top: -5px;
 
   color: inherit;
 }
@@ -1592,7 +1595,7 @@ input[type=radio].visually-hidden {
 .catalog {
   width: 100%;
   max-width: 830px;
-  padding: 69px 0 77px 72px;
+  padding: 69px 0 75px 72px;
 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -1737,7 +1740,7 @@ input[type=radio].visually-hidden {
 /****************************** Пагинация pagination ******************************/
 .pagination {
   width: 100%;
-  margin-top: -14px;
+  margin-top: -12px;
 
   background-color: #ebebeb;
 }
@@ -1791,6 +1794,7 @@ input[type=radio].visually-hidden {
 .page-prev .pagination__link {
   margin: 0;
   padding: 22px 27px;
+  padding-bottom: 24px;
 
   opacity: 1;
 }
@@ -1904,6 +1908,8 @@ input[type=radio].visually-hidden {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: baseline;
+
 
   width: 50%;
 }
@@ -2023,6 +2029,17 @@ input[type=radio].visually-hidden {
 
 .filter__button {
   width: 100%;
+}
+
+/* Disabled */
+input[type=radio]:disabled+label::before,
+input[type=checkbox]:disabled+label::before {
+  opacity: 0.25;
+}
+
+input[type=radio]:disabled+label,
+input[type=checkbox]:disabled+label {
+  color: #a6a6a6;
 }
 
 /****************************** Модалки ******************************/
@@ -2231,6 +2248,86 @@ input[type=radio].visually-hidden {
   transform: rotate(-45deg);
 }
 
+/* стили для пользовательской навигации  */
+.user-nav__link {
+  opacity: 1;
+}
+
+.footer .user-nav__link {
+  opacity: 0.7;
+}
+
+.user-nav__link:hover,
+.user-nav__link:focus {
+  opacity: 0.6;
+}
+
+.footer .user-nav__link:hover,
+.footer .user-nav__link:focus {
+  opacity: 1;
+}
+
+.user-nav__link:active,
+.user__logout,
+.footer .user__logout {
+  opacity: 0.3;
+}
+
+/* новые стили для иконок в пунктах меню пользователя  */
+.user-nav__link {
+  padding-left: 18px;
+  margin-right: -6px;
+}
+
+.user__cart {
+  padding-left: 18px;
+  margin-right: 0;
+}
+
+.user__login {
+  padding-left: 27px;
+}
+
+.footer .container {
+    padding-top: 63px;
+}
+
+.footer .user__login {
+  padding-left: 22px;
+}
+
+.footer .user__login::before {
+  left: -3px;
+
+}
+
+.inner-page .user__logged {
+  padding-left: 28px;
+}
+
+.inner-page .user__compare {
+  padding-left: 21px;
+  margin-right: 5px;
+}
+
+.footer .user-nav__item--logout {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.user__compare--catalog {
+  padding-left: 30px;
+}
+
+.user__compare--catalog::before {
+  left: 11px;
+}
+
+.filter__color-label:hover::before,
+.filter__color-label:focus::before {
+  opacity: 0.6;
+}
+
 /****************************** стили для IE ******************************/
 @media screen and (-ms-high-contrast: active),
 (-ms-high-contrast: none) {
@@ -2240,5 +2337,6 @@ input[type=radio].visually-hidden {
 
   .footer__text:last-child {
     text-align: right;
+
   }
 }
