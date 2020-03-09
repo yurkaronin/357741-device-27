@@ -1492,8 +1492,7 @@ input[type=radio].visually-hidden {
 
   width: 100%;
   max-width: 328px;
-  height: 100%;
-  padding: 23px 0;
+  padding: 23px 10px;
   padding-left: 60px;
 
   background-color: #dbdbdb;
@@ -1504,6 +1503,7 @@ input[type=radio].visually-hidden {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  align-self: stretch;
 }
 
 .catalog__order {
@@ -1521,6 +1521,7 @@ input[type=radio].visually-hidden {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .catalog__order .catalog__subtitle {
@@ -1555,6 +1556,7 @@ input[type=radio].visually-hidden {
 
 .sort-sequence__list {
   max-width: 100px;
+  flex-wrap: nowrap;
 }
 
 .sort-order__link:focus,
