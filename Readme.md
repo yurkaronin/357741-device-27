@@ -3,6 +3,8 @@
 * Студент: [Юрий Савченко](https://up.htmlacademy.ru/htmlcss/27/user/357741).
 * Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
+Ссылка для демонстрации: https://yurkaronin.github.io/357741-device-27/
+
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
